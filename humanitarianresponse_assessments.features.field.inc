@@ -1838,38 +1838,25 @@ function humanitarianresponse_assessments_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_contact_email',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => '100',
-      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'module' => 'email',
+      'settings' => array(),
       'translatable' => '0',
-      'type' => 'text',
+      'type' => 'email',
     ),
     'field_instance' => array(
-      'bundle' => 'assessment',
+      'bundle' => 'contact',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
+          'module' => 'email',
           'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '14',
+          'type' => 'email_default',
+          'weight' => 2,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1880,20 +1867,19 @@ function humanitarianresponse_assessments_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_contact_email',
-      'label' => 'Contact Email',
+      'label' => 'Email',
       'required' => 1,
       'settings' => array(
-        'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'text',
+        'module' => 'email',
         'settings' => array(
           'size' => '60',
         ),
-        'type' => 'text_textfield',
-        'weight' => '16',
+        'type' => 'email_textfield',
+        'weight' => '4',
       ),
     ),
   );
