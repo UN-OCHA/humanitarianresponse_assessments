@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the humanitarianresponse assessments feature.
+ */
+
+include_once('humanitarianresponse_assessments.features.inc');
