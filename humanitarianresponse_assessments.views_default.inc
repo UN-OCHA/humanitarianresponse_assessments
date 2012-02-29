@@ -880,7 +880,7 @@ function humanitarianresponse_assessments_views_default_views() {
   );
   $handler->display->display_options['fields']['field_asst_data']['field_api_classes'] = 0;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  $handler->display->display_options['path'] = 'assessment-reg';
+  $handler->display->display_options['path'] = 'resources/assessment-registry';
 
   /* Display: Data export */
   $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
