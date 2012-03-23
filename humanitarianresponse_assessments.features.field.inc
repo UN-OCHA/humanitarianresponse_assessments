@@ -1971,13 +1971,13 @@ function humanitarianresponse_assessments_field_default_fields() {
   );
 
   // Exported field: 'node-assessment-field_contact_name'
-  $fields['node-assessment-field_contact_name'] = array(
+  $fields['node-assessment-field_asst_contact_name'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_contact_name',
+      'field_name' => 'field_asst_contact_name',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -2019,7 +2019,7 @@ function humanitarianresponse_assessments_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_contact_name',
+      'field_name' => 'field_asst_contact_name',
       'label' => 'Contact Name',
       'required' => 1,
       'settings' => array(
@@ -2039,13 +2039,13 @@ function humanitarianresponse_assessments_field_default_fields() {
   );
 
   // Exported field: 'node-assessment-field_contact_telephone'
-  $fields['node-assessment-field_contact_telephone'] = array(
+  $fields['node-assessment-field_asst_contact_telephone'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_contact_telephone',
+      'field_name' => 'field_asst_contact_telephone',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -2087,7 +2087,7 @@ function humanitarianresponse_assessments_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_contact_telephone',
+      'field_name' => 'field_asst_contact_telephone',
       'label' => 'Contact Telephone/Mobile',
       'required' => 1,
       'settings' => array(
@@ -2177,13 +2177,13 @@ function humanitarianresponse_assessments_field_default_fields() {
   );
 
   // Exported field: 'node-assessment-field_methodology'
-  $fields['node-assessment-field_methodology'] = array(
+  $fields['node-assessment-field_asst_methodology'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_methodology',
+      'field_name' => 'field_asst_methodology',
       'field_permissions' => array(
         'type' => '0',
       ),
@@ -2226,7 +2226,7 @@ function humanitarianresponse_assessments_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_methodology',
+      'field_name' => 'field_asst_methodology',
       'label' => 'Methodology',
       'required' => 0,
       'settings' => array(
@@ -2316,13 +2316,13 @@ function humanitarianresponse_assessments_field_default_fields() {
   );
 
   // Exported field: 'node-assessment-field_other_place'
-  $fields['node-assessment-field_other_place'] = array(
+  $fields['node-assessment-field_asst_other_place'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_other_place',
+      'field_name' => 'field_asst_other_place',
       'foreign keys' => array(),
       'indexes' => array(),
       'module' => 'field_collection',
@@ -2359,7 +2359,7 @@ function humanitarianresponse_assessments_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_other_place',
+      'field_name' => 'field_asst_other_place',
       'label' => 'Other Place',
       'required' => 0,
       'settings' => array(
