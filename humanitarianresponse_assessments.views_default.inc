@@ -171,51 +171,64 @@ function humanitarianresponse_assessments_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['use_ajax'] = FALSE;
+  $handler->display->display_options['use_ajax'] = TRUE;
+  $handler->display->display_options['defaults']['exposed_form'] = FALSE;
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['autosubmit'] = 1;
+  $handler->display->display_options['exposed_form']['options']['autosubmit_hide'] = 1;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'title' => 'title',
-    'field_loc' => 'field_loc',
-    'field_leading_org' => 'field_leading_org',
-    'field_sectors' => 'field_sectors',
-    'field_asst_report' => 'field_asst_report',
-    'field_asst_data' => 'field_asst_data',
-    'field_asst_questionnaire' => 'field_asst_questionnaire',
+    'field_locations' => 'field_locations',
+    'field_organizations' => 'field_organizations',
+    'field_clusters' => 'field_clusters',
     'field_asst_start_date' => 'field_asst_start_date',
     'field_asst_status' => 'field_asst_status',
+    'field_asst_report' => 'field_asst_report',
+    'field_asst_questionnaire' => 'field_asst_questionnaire',
+    'field_asst_data' => 'field_asst_data',
   );
   $handler->display->display_options['style_options']['default'] = 'title';
   $handler->display->display_options['style_options']['info'] = array(
     'title' => array(
-      'sortable' => 0,
+      'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => 'views-align-left',
       'separator' => '',
       'empty_column' => 0,
     ),
-    'field_loc' => array(
-      'align' => 'views-align-left',
+    'field_locations' => array(
+      'align' => '',
       'separator' => '',
       'empty_column' => 0,
     ),
-    'field_leading_org' => array(
-      'align' => 'views-align-left',
+    'field_organizations' => array(
+      'align' => '',
       'separator' => '',
       'empty_column' => 0,
     ),
-    'field_sectors' => array(
-      'align' => 'views-align-left',
+    'field_clusters' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_asst_start_date' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_asst_status' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
       'separator' => '',
       'empty_column' => 0,
     ),
     'field_asst_report' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => 'views-align-left',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_asst_data' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => 'views-align-left',
@@ -229,17 +242,10 @@ function humanitarianresponse_assessments_views_default_views() {
       'separator' => '',
       'empty_column' => 0,
     ),
-    'field_asst_start_date' => array(
+    'field_asst_data' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_asst_status' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
+      'align' => 'views-align-left',
       'separator' => '',
       'empty_column' => 0,
     ),
@@ -250,23 +256,62 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['exposed_block'] = TRUE;
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = FALSE;
+  $handler->display->display_options['empty']['area']['content'] = 'There are no results for this request';
+  $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
+  $handler->display->display_options['empty']['area']['tokenize'] = 0;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['required'] = 0;
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'clusters' => 'clusters',
+    'locations' => 'locations',
+    'organizations' => 'organizations',
+    'map_types' => 0,
+    'coordination_hubs' => 0,
+    'disaster_types' => 0,
+    'display_properties' => 0,
+    'document_types' => 0,
+    'emergencies' => 0,
+    'event_categories' => 0,
+    'funding' => 0,
+    'gallery_collections' => 0,
+    'tags' => 0,
+    'themes' => 0,
+  );
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['label'] = 'Assessment Title';
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['more_link'] = 0;
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
   $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = 0;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = 1;
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['title']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
   /* Field: Content: Location */
   $handler->display->display_options['fields']['field_locations']['id'] = 'field_locations';
@@ -502,6 +547,66 @@ function humanitarianresponse_assessments_views_default_views() {
   );
   $handler->display->display_options['fields']['field_asst_data']['field_api_classes'] = 0;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'assessment' => 'assessment',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Cluster(s) (field_clusters) */
+  $handler->display->display_options['filters']['field_clusters_tid']['id'] = 'field_clusters_tid';
+  $handler->display->display_options['filters']['field_clusters_tid']['table'] = 'field_data_field_clusters';
+  $handler->display->display_options['filters']['field_clusters_tid']['field'] = 'field_clusters_tid';
+  $handler->display->display_options['filters']['field_clusters_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_clusters_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_clusters_tid']['expose']['operator_id'] = 'field_clusters_tid_op';
+  $handler->display->display_options['filters']['field_clusters_tid']['expose']['label'] = 'Clusters';
+  $handler->display->display_options['filters']['field_clusters_tid']['expose']['operator'] = 'field_clusters_tid_op';
+  $handler->display->display_options['filters']['field_clusters_tid']['expose']['identifier'] = 'field_clusters_tid';
+  $handler->display->display_options['filters']['field_clusters_tid']['expose']['reduce'] = 0;
+  $handler->display->display_options['filters']['field_clusters_tid']['reduce_duplicates'] = 0;
+  $handler->display->display_options['filters']['field_clusters_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_clusters_tid']['vocabulary'] = 'clusters';
+  $handler->display->display_options['filters']['field_clusters_tid']['error_message'] = 1;
+  /* Filter criterion: Content: Source (field_organizations) */
+  $handler->display->display_options['filters']['field_organizations_tid']['id'] = 'field_organizations_tid';
+  $handler->display->display_options['filters']['field_organizations_tid']['table'] = 'field_data_field_organizations';
+  $handler->display->display_options['filters']['field_organizations_tid']['field'] = 'field_organizations_tid';
+  $handler->display->display_options['filters']['field_organizations_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_organizations_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_organizations_tid']['expose']['operator_id'] = 'field_organizations_tid_op';
+  $handler->display->display_options['filters']['field_organizations_tid']['expose']['label'] = 'Organizations';
+  $handler->display->display_options['filters']['field_organizations_tid']['expose']['operator'] = 'field_organizations_tid_op';
+  $handler->display->display_options['filters']['field_organizations_tid']['expose']['identifier'] = 'field_organizations_tid';
+  $handler->display->display_options['filters']['field_organizations_tid']['expose']['reduce'] = 0;
+  $handler->display->display_options['filters']['field_organizations_tid']['reduce_duplicates'] = 0;
+  $handler->display->display_options['filters']['field_organizations_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_organizations_tid']['vocabulary'] = 'organizations';
+  $handler->display->display_options['filters']['field_organizations_tid']['error_message'] = 1;
+  /* Filter criterion: Content: Location (field_locations) */
+  $handler->display->display_options['filters']['field_locations_tid']['id'] = 'field_locations_tid';
+  $handler->display->display_options['filters']['field_locations_tid']['table'] = 'field_data_field_locations';
+  $handler->display->display_options['filters']['field_locations_tid']['field'] = 'field_locations_tid';
+  $handler->display->display_options['filters']['field_locations_tid']['value'] = '';
+  $handler->display->display_options['filters']['field_locations_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_locations_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_locations_tid']['expose']['operator_id'] = 'field_locations_tid_op';
+  $handler->display->display_options['filters']['field_locations_tid']['expose']['label'] = 'Location';
+  $handler->display->display_options['filters']['field_locations_tid']['expose']['operator'] = 'field_locations_tid_op';
+  $handler->display->display_options['filters']['field_locations_tid']['expose']['identifier'] = 'field_locations_tid';
+  $handler->display->display_options['filters']['field_locations_tid']['reduce_duplicates'] = 0;
+  $handler->display->display_options['filters']['field_locations_tid']['vocabulary'] = 'locations';
+  $handler->display->display_options['filters']['field_locations_tid']['error_message'] = 1;
   $handler->display->display_options['path'] = 'resources/assessment-registry';
 
   /* Display: Data export */

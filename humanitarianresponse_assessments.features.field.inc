@@ -1576,7 +1576,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'field_collection',
           'settings' => array(
             'add' => '',
@@ -1903,7 +1903,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'field_collection',
           'settings' => array(
             'add' => '',
@@ -1963,7 +1963,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'field_collection',
           'settings' => array(
             'add' => '',
