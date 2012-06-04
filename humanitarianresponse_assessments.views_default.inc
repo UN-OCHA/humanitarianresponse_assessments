@@ -603,9 +603,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['filters']['field_locations_tid']['vocabulary'] = 'locations';
   $handler->display->display_options['filters']['field_locations_tid']['error_message'] = 1;
   $handler->display->display_options['path'] = 'resources/assessment-registry';
-
-  /* Display: Data export */
-  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  
   $export['assessment_registry'] = $view;
 
   return $export;
