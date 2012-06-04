@@ -19,7 +19,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_ass_data_file_rest',
       'field_permissions' => array(
-        'type' => '0',
+        'type' => '2',
       ),
       'foreign keys' => array(
         'fid' => array(
@@ -295,7 +295,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_asst_data_url_rest',
       'field_permissions' => array(
-        'type' => '0',
+        'type' => '2',
       ),
       'foreign keys' => array(),
       'indexes' => array(),
@@ -566,7 +566,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_ques_file_rest',
       'field_permissions' => array(
-        'type' => '0',
+        'type' => '2',
       ),
       'foreign keys' => array(
         'fid' => array(
@@ -776,7 +776,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_ques_url_rest',
       'field_permissions' => array(
-        'type' => '0',
+        'type' => '2',
       ),
       'foreign keys' => array(),
       'indexes' => array(),
@@ -920,6 +920,9 @@ function humanitarianresponse_assessments_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_asst_report_file_rest',
+      'field_permissions' => array(
+        'type' => '2',
+      ),
       'foreign keys' => array(
         'fid' => array(
           'columns' => array(
@@ -1124,6 +1127,9 @@ function humanitarianresponse_assessments_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_asst_report_url_rest',
+      'field_permissions' => array(
+        'type' => '2',
+      ),
       'foreign keys' => array(),
       'indexes' => array(),
       'module' => 'link',
