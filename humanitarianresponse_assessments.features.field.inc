@@ -1255,125 +1255,6 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_other_place-field_other_place_name'
-  $fields['field_collection_item-field_other_place-field_other_place_name'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_other_place_name',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => '255',
-      ),
-      'translatable' => '0',
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'field_other_place',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 1,
-        ),
-      ),
-      'entity_type' => 'field_collection_item',
-      'field_name' => 'field_other_place_name',
-      'label' => 'Place Name',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => '0',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => '60',
-        ),
-        'type' => 'text_textfield',
-        'weight' => '2',
-      ),
-    ),
-  );
-
-  // Exported field: 'field_collection_item-field_other_place-field_other_place_type'
-  $fields['field_collection_item-field_other_place-field_other_place_type'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_other_place_type',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'value' => array(
-          0 => 'value',
-        ),
-      ),
-      'module' => 'list',
-      'settings' => array(
-        'allowed_values' => array(
-          'Camp' => 'Camp',
-          'Settlement' => 'Settlement',
-          'Neighborhood' => 'Neighborhood',
-        ),
-        'allowed_values_function' => '',
-      ),
-      'translatable' => '0',
-      'type' => 'list_text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'field_other_place',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'list',
-          'settings' => array(),
-          'type' => 'list_default',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'field_collection_item',
-      'field_name' => 'field_other_place_type',
-      'label' => 'Other Place Type',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
-        'weight' => '1',
-      ),
-    ),
-  );
-
   // Exported field: 'node-assessment-field_asst_contact_email'
   $fields['node-assessment-field_asst_contact_email'] = array(
     'field_config' => array(
@@ -1757,66 +1638,6 @@ function humanitarianresponse_assessments_field_default_fields() {
         ),
         'type' => 'text_textarea',
         'weight' => '6',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-assessment-field_asst_other_place'
-  $fields['node-assessment-field_asst_other_place'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_asst_other_place',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'module' => 'field_collection',
-      'settings' => array(
-        'path' => '',
-      ),
-      'translatable' => '0',
-      'type' => 'field_collection',
-    ),
-    'field_instance' => array(
-      'bundle' => 'assessment',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'module' => 'field_collection',
-          'settings' => array(
-            'add' => '',
-            'delete' => '',
-            'description' => 0,
-            'edit' => '',
-            'view_mode' => 'full',
-          ),
-          'type' => 'field_collection_view',
-          'weight' => '0',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_asst_other_place',
-      'label' => 'Other Place',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'field_collection',
-        'settings' => array(),
-        'type' => 'field_collection_embed',
-        'weight' => '2',
       ),
     ),
   );
@@ -2466,10 +2287,7 @@ function humanitarianresponse_assessments_field_default_fields() {
   t('Geographical Area(s)');
   t('Leading/Coordinating Organizations');
   t('Methodology');
-  t('Other Place');
-  t('Other Place Type');
   t('Participating Organization(s)');
-  t('Place Name');
   t('Questionnaire Accessibility');
   t('Questionnaire File');
   t('Questionnaire File(Restricted)');
