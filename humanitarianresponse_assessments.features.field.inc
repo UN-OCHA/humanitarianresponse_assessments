@@ -395,7 +395,11 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'field_asst_data',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'value' => 'Publicly Available',
+        ),
+      ),
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -454,7 +458,11 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'field_asst_questionnaire',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'value' => 'Publicly Available',
+        ),
+      ),
       'deleted' => '0',
       'description' => '',
       'display' => array(
