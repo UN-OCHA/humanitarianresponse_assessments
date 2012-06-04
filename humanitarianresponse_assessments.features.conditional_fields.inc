@@ -16,7 +16,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
     'dependent' => 'field_ass_data_file_rest',
     'dependee' => 'field_data_accessibility',
     'options' => array(
-      'state' => '!visible',
+      'state' => 'visible',
       'condition' => 'value',
       'grouping' => 'AND',
       'effect' => 'show',
@@ -105,7 +105,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
         ),
       ),
       'selector' => '',
-      'values_set' => '3',
+      'values_set' => '5',
       'value_form' => '_none',
       'values' => array(
         0 => 'Publicly Available',
@@ -123,7 +123,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
     'dependent' => 'field_asst_data_file',
     'dependee' => 'field_data_accessibility',
     'options' => array(
-      'state' => '!visible',
+      'state' => 'visible',
       'condition' => 'value',
       'grouping' => 'AND',
       'effect' => 'show',
@@ -212,7 +212,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
         ),
       ),
       'selector' => '',
-      'values_set' => '3',
+      'values_set' => '5',
       'value_form' => '_none',
       'values' => array(
         0 => 'Restricted Distribution',
@@ -230,7 +230,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
     'dependent' => 'field_asst_data_instruction',
     'dependee' => 'field_data_accessibility',
     'options' => array(
-      'state' => '!visible',
+      'state' => 'visible',
       'condition' => 'value',
       'grouping' => 'AND',
       'effect' => 'show',
@@ -319,11 +319,13 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
         ),
       ),
       'selector' => '',
-      'values_set' => '3',
+      'values_set' => '5',
       'value_form' => '_none',
       'values' => array(
         0 => 'Not Available',
         1 => 'Not Applicable',
+        2 => 'Publicly Available',
+        3 => 'Restricted Distribution',
       ),
       'value' => array(),
     ),
@@ -335,7 +337,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
     'dependent' => 'field_asst_data_url',
     'dependee' => 'field_data_accessibility',
     'options' => array(
-      'state' => '!visible',
+      'state' => 'visible',
       'condition' => 'value',
       'grouping' => 'AND',
       'effect' => 'show',
@@ -424,7 +426,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
         ),
       ),
       'selector' => '',
-      'values_set' => '3',
+      'values_set' => '5',
       'value_form' => '_none',
       'values' => array(
         0 => 'Restricted Distribution',
@@ -442,7 +444,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
     'dependent' => 'field_asst_data_url_rest',
     'dependee' => 'field_data_accessibility',
     'options' => array(
-      'state' => '!visible',
+      'state' => 'visible',
       'condition' => 'value',
       'grouping' => 'AND',
       'effect' => 'show',
@@ -531,7 +533,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
         ),
       ),
       'selector' => '',
-      'values_set' => '3',
+      'values_set' => '5',
       'value_form' => '_none',
       'values' => array(
         0 => 'Publicly Available',
@@ -549,7 +551,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
     'dependent' => 'field_ques_file',
     'dependee' => 'field_ques_accessibility',
     'options' => array(
-      'state' => '!visible',
+      'state' => 'visible',
       'condition' => 'value',
       'grouping' => 'AND',
       'effect' => 'show',
@@ -638,7 +640,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
         ),
       ),
       'selector' => '',
-      'values_set' => '3',
+      'values_set' => '5',
       'value_form' => '_none',
       'values' => array(
         0 => 'Restricted Distribution',
@@ -656,7 +658,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
     'dependent' => 'field_ques_file_rest',
     'dependee' => 'field_ques_accessibility',
     'options' => array(
-      'state' => '!visible',
+      'state' => 'visible',
       'condition' => 'value',
       'grouping' => 'AND',
       'effect' => 'show',
@@ -745,7 +747,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
         ),
       ),
       'selector' => '',
-      'values_set' => '3',
+      'values_set' => '5',
       'value_form' => '_none',
       'values' => array(
         0 => 'Publicly Available',
@@ -763,7 +765,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
     'dependent' => 'field_ques_instructions',
     'dependee' => 'field_ques_accessibility',
     'options' => array(
-      'state' => '!visible',
+      'state' => 'visible',
       'condition' => 'value',
       'grouping' => 'AND',
       'effect' => 'show',
@@ -852,11 +854,13 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
         ),
       ),
       'selector' => '',
-      'values_set' => '3',
+      'values_set' => '5',
       'value_form' => '_none',
       'values' => array(
         0 => 'Not Available',
         1 => 'Not Applicable',
+        2 => 'Publicly Available',
+        3 => 'Restricted Distribution',
       ),
       'value' => array(),
     ),
@@ -868,7 +872,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
     'dependent' => 'field_ques_url',
     'dependee' => 'field_ques_accessibility',
     'options' => array(
-      'state' => '!visible',
+      'state' => 'visible',
       'condition' => 'value',
       'grouping' => 'AND',
       'effect' => 'show',
@@ -957,7 +961,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
         ),
       ),
       'selector' => '',
-      'values_set' => '3',
+      'values_set' => '5',
       'value_form' => '_none',
       'values' => array(
         0 => 'Restricted Distribution',
@@ -975,7 +979,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
     'dependent' => 'field_ques_url_rest',
     'dependee' => 'field_ques_accessibility',
     'options' => array(
-      'state' => '!visible',
+      'state' => 'visible',
       'condition' => 'value',
       'grouping' => 'AND',
       'effect' => 'show',
@@ -1064,7 +1068,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
         ),
       ),
       'selector' => '',
-      'values_set' => '3',
+      'values_set' => '5',
       'value_form' => '_none',
       'values' => array(
         0 => 'Publicly Available',
@@ -1082,7 +1086,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
     'dependent' => 'field_asst_report_file',
     'dependee' => 'field_report_accessibility',
     'options' => array(
-      'state' => '!visible',
+      'state' => 'visible',
       'condition' => 'value',
       'grouping' => 'AND',
       'effect' => 'show',
@@ -1171,7 +1175,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
         ),
       ),
       'selector' => '',
-      'values_set' => '3',
+      'values_set' => '5',
       'value_form' => '_none',
       'values' => array(
         0 => 'Restricted Distribution',
@@ -1189,7 +1193,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
     'dependent' => 'field_asst_report_file_rest',
     'dependee' => 'field_report_accessibility',
     'options' => array(
-      'state' => '!visible',
+      'state' => 'visible',
       'condition' => 'value',
       'grouping' => 'AND',
       'effect' => 'show',
@@ -1278,7 +1282,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
         ),
       ),
       'selector' => '',
-      'values_set' => '3',
+      'values_set' => '5',
       'value_form' => 'Available on Request',
       'values' => array(
         0 => 'Publicly Available',
@@ -1296,7 +1300,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
     'dependent' => 'field_asst_report_inst',
     'dependee' => 'field_report_accessibility',
     'options' => array(
-      'state' => '!visible',
+      'state' => 'visible',
       'condition' => 'value',
       'grouping' => 'AND',
       'effect' => 'show',
@@ -1385,11 +1389,13 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
         ),
       ),
       'selector' => '',
-      'values_set' => '3',
+      'values_set' => '5',
       'value_form' => '_none',
       'values' => array(
         0 => 'Not Available',
         1 => 'Not Applicable',
+        2 => 'Publicly Available',
+        3 => 'Restricted Distribution',
       ),
       'value' => array(),
     ),
@@ -1401,7 +1407,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
     'dependent' => 'field_asst_report_url',
     'dependee' => 'field_report_accessibility',
     'options' => array(
-      'state' => '!visible',
+      'state' => 'visible',
       'condition' => 'value',
       'grouping' => 'AND',
       'effect' => 'show',
@@ -1490,7 +1496,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
         ),
       ),
       'selector' => '',
-      'values_set' => '3',
+      'values_set' => '5',
       'value_form' => 'Available on Request',
       'values' => array(
         0 => 'Restricted Distribution',
@@ -1508,7 +1514,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
     'dependent' => 'field_asst_report_url_rest',
     'dependee' => 'field_report_accessibility',
     'options' => array(
-      'state' => '!visible',
+      'state' => 'visible',
       'condition' => 'value',
       'grouping' => 'AND',
       'effect' => 'show',
@@ -1597,7 +1603,7 @@ function humanitarianresponse_assessments_conditional_fields_default_fields() {
         ),
       ),
       'selector' => '',
-      'values_set' => '3',
+      'values_set' => '5',
       'value_form' => 'Available on Request',
       'values' => array(
         0 => 'Publicly Available',

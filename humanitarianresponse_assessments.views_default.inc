@@ -26,6 +26,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
@@ -479,11 +480,9 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['field_asst_report']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_asst_report']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_asst_report']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_asst_report']['type'] = 'field_collection_views_view';
+  $handler->display->display_options['fields']['field_asst_report']['type'] = 'field_collection_fields';
   $handler->display->display_options['fields']['field_asst_report']['settings'] = array(
-    'name' => 'assessment_report_view',
-    'display_id' => 'default',
-    'add' => '',
+    'view_mode' => 'full',
   );
   $handler->display->display_options['fields']['field_asst_report']['field_api_classes'] = 0;
   /* Field: Content: Assessment Questionnaire */
@@ -509,11 +508,9 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['field_asst_questionnaire']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_asst_questionnaire']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_asst_questionnaire']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_asst_questionnaire']['type'] = 'field_collection_views_view';
+  $handler->display->display_options['fields']['field_asst_questionnaire']['type'] = 'field_collection_fields';
   $handler->display->display_options['fields']['field_asst_questionnaire']['settings'] = array(
-    'name' => 'assessment_questionnaire_view',
-    'display_id' => 'default',
-    'add' => '',
+    'view_mode' => 'full',
   );
   $handler->display->display_options['fields']['field_asst_questionnaire']['field_api_classes'] = 0;
   /* Field: Content: Assessment Data */
@@ -539,11 +536,9 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['field_asst_data']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_asst_data']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_asst_data']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_asst_data']['type'] = 'field_collection_views_view';
+  $handler->display->display_options['fields']['field_asst_data']['type'] = 'field_collection_fields';
   $handler->display->display_options['fields']['field_asst_data']['settings'] = array(
-    'name' => 'assessment_data_view',
-    'display_id' => 'default',
-    'add' => '',
+    'view_mode' => 'full',
   );
   $handler->display->display_options['fields']['field_asst_data']['field_api_classes'] = 0;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
