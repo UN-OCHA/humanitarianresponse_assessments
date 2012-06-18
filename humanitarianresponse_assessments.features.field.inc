@@ -10,7 +10,7 @@
 function humanitarianresponse_assessments_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'field_collection_item-field_asst_data-field_ass_data_file_rest'
+  // Exported field: 'field_collection_item-field_asst_data-field_ass_data_file_rest'.
   $fields['field_collection_item-field_asst_data-field_ass_data_file_rest'] = array(
     'field_config' => array(
       'active' => '1',
@@ -34,6 +34,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'file',
       'settings' => array(
         'display_default' => 0,
@@ -79,7 +80,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_data-field_asst_data_file'
+  // Exported field: 'field_collection_item-field_asst_data-field_asst_data_file'.
   $fields['field_collection_item-field_asst_data-field_asst_data_file'] = array(
     'field_config' => array(
       'active' => '1',
@@ -100,6 +101,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'file',
       'settings' => array(
         'display_default' => 0,
@@ -145,7 +147,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_data-field_asst_data_instruction'
+  // Exported field: 'field_collection_item-field_asst_data-field_asst_data_instruction'.
   $fields['field_collection_item-field_asst_data-field_asst_data_instruction'] = array(
     'field_config' => array(
       'active' => '1',
@@ -169,6 +171,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -210,7 +213,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_data-field_asst_data_url'
+  // Exported field: 'field_collection_item-field_asst_data-field_asst_data_url'.
   $fields['field_collection_item-field_asst_data-field_asst_data_url'] = array(
     'field_config' => array(
       'active' => '1',
@@ -220,6 +223,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'field_name' => 'field_asst_data_url',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(
@@ -286,7 +290,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_data-field_asst_data_url_rest'
+  // Exported field: 'field_collection_item-field_asst_data-field_asst_data_url_rest'.
   $fields['field_collection_item-field_asst_data-field_asst_data_url_rest'] = array(
     'field_config' => array(
       'active' => '1',
@@ -299,6 +303,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       ),
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(
@@ -365,7 +370,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_data-field_data_accessibility'
+  // Exported field: 'field_collection_item-field_asst_data-field_data_accessibility'.
   $fields['field_collection_item-field_asst_data-field_data_accessibility'] = array(
     'field_config' => array(
       'active' => '1',
@@ -379,6 +384,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'value',
         ),
       ),
+      'locked' => '0',
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
@@ -428,7 +434,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_questionnaire-field_ques_accessibility'
+  // Exported field: 'field_collection_item-field_asst_questionnaire-field_ques_accessibility'.
   $fields['field_collection_item-field_asst_questionnaire-field_ques_accessibility'] = array(
     'field_config' => array(
       'active' => '1',
@@ -442,6 +448,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'value',
         ),
       ),
+      'locked' => '0',
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
@@ -491,7 +498,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_questionnaire-field_ques_file'
+  // Exported field: 'field_collection_item-field_asst_questionnaire-field_ques_file'.
   $fields['field_collection_item-field_asst_questionnaire-field_ques_file'] = array(
     'field_config' => array(
       'active' => '1',
@@ -512,6 +519,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'file',
       'settings' => array(
         'display_default' => 0,
@@ -557,7 +565,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_questionnaire-field_ques_file_rest'
+  // Exported field: 'field_collection_item-field_asst_questionnaire-field_ques_file_rest'.
   $fields['field_collection_item-field_asst_questionnaire-field_ques_file_rest'] = array(
     'field_config' => array(
       'active' => '1',
@@ -581,6 +589,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'file',
       'settings' => array(
         'display_default' => 0,
@@ -626,7 +635,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_questionnaire-field_ques_instructions'
+  // Exported field: 'field_collection_item-field_asst_questionnaire-field_ques_instructions'.
   $fields['field_collection_item-field_asst_questionnaire-field_ques_instructions'] = array(
     'field_config' => array(
       'active' => '1',
@@ -650,6 +659,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -691,7 +701,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_questionnaire-field_ques_url'
+  // Exported field: 'field_collection_item-field_asst_questionnaire-field_ques_url'.
   $fields['field_collection_item-field_asst_questionnaire-field_ques_url'] = array(
     'field_config' => array(
       'active' => '1',
@@ -701,6 +711,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'field_name' => 'field_ques_url',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(
@@ -767,7 +778,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_questionnaire-field_ques_url_rest'
+  // Exported field: 'field_collection_item-field_asst_questionnaire-field_ques_url_rest'.
   $fields['field_collection_item-field_asst_questionnaire-field_ques_url_rest'] = array(
     'field_config' => array(
       'active' => '1',
@@ -780,6 +791,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       ),
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(
@@ -846,7 +858,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_report-field_asst_report_file'
+  // Exported field: 'field_collection_item-field_asst_report-field_asst_report_file'.
   $fields['field_collection_item-field_asst_report-field_asst_report_file'] = array(
     'field_config' => array(
       'active' => '1',
@@ -867,6 +879,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'file',
       'settings' => array(
         'display_default' => 0,
@@ -912,7 +925,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_report-field_asst_report_file_rest'
+  // Exported field: 'field_collection_item-field_asst_report-field_asst_report_file_rest'.
   $fields['field_collection_item-field_asst_report-field_asst_report_file_rest'] = array(
     'field_config' => array(
       'active' => '1',
@@ -936,6 +949,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'file',
       'settings' => array(
         'display_default' => 0,
@@ -981,7 +995,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_report-field_asst_report_inst'
+  // Exported field: 'field_collection_item-field_asst_report-field_asst_report_inst'.
   $fields['field_collection_item-field_asst_report-field_asst_report_inst'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1002,6 +1016,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -1043,7 +1058,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_report-field_asst_report_url'
+  // Exported field: 'field_collection_item-field_asst_report-field_asst_report_url'.
   $fields['field_collection_item-field_asst_report-field_asst_report_url'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1053,6 +1068,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'field_name' => 'field_asst_report_url',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(
@@ -1119,7 +1135,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_report-field_asst_report_url_rest'
+  // Exported field: 'field_collection_item-field_asst_report-field_asst_report_url_rest'.
   $fields['field_collection_item-field_asst_report-field_asst_report_url_rest'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1132,6 +1148,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       ),
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(
@@ -1198,7 +1215,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_asst_report-field_report_accessibility'
+  // Exported field: 'field_collection_item-field_asst_report-field_report_accessibility'.
   $fields['field_collection_item-field_asst_report-field_report_accessibility'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1212,6 +1229,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'value',
         ),
       ),
+      'locked' => '0',
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
@@ -1261,7 +1279,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assessment-field_asst_contact_email'
+  // Exported field: 'node-assessment-field_asst_contact_email'.
   $fields['node-assessment-field_asst_contact_email'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1271,6 +1289,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'field_name' => 'field_asst_contact_email',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'email',
       'settings' => array(),
       'translatable' => '0',
@@ -1315,7 +1334,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assessment-field_asst_contact_name'
+  // Exported field: 'node-assessment-field_asst_contact_name'.
   $fields['node-assessment-field_asst_contact_name'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1336,6 +1355,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '100',
@@ -1383,7 +1403,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assessment-field_asst_contact_telephone'
+  // Exported field: 'node-assessment-field_asst_contact_telephone'.
   $fields['node-assessment-field_asst_contact_telephone'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1404,6 +1424,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '100',
@@ -1451,7 +1472,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assessment-field_asst_data'
+  // Exported field: 'node-assessment-field_asst_data'.
   $fields['node-assessment-field_asst_data'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1461,6 +1482,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'field_name' => 'field_asst_data',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'field_collection',
       'settings' => array(
         'path' => '',
@@ -1511,7 +1533,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assessment-field_asst_freq'
+  // Exported field: 'node-assessment-field_asst_freq'.
   $fields['node-assessment-field_asst_freq'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1532,6 +1554,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -1579,7 +1602,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assessment-field_asst_methodology'
+  // Exported field: 'node-assessment-field_asst_methodology'.
   $fields['node-assessment-field_asst_methodology'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1603,6 +1626,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -1648,7 +1672,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assessment-field_asst_participating_org'
+  // Exported field: 'node-assessment-field_asst_participating_org'.
   $fields['node-assessment-field_asst_participating_org'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1669,6 +1693,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -1677,6 +1702,7 @@ function humanitarianresponse_assessments_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'options_list_callback' => 'i18n_taxonomy_allowed_values',
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -1718,7 +1744,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assessment-field_asst_questionnaire'
+  // Exported field: 'node-assessment-field_asst_questionnaire'.
   $fields['node-assessment-field_asst_questionnaire'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1728,6 +1754,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'field_name' => 'field_asst_questionnaire',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'field_collection',
       'settings' => array(
         'path' => '',
@@ -1778,7 +1805,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assessment-field_asst_report'
+  // Exported field: 'node-assessment-field_asst_report'.
   $fields['node-assessment-field_asst_report'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1788,6 +1815,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'field_name' => 'field_asst_report',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'field_collection',
       'settings' => array(
         'path' => '',
@@ -1838,7 +1866,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assessment-field_asst_start_date'
+  // Exported field: 'node-assessment-field_asst_start_date'.
   $fields['node-assessment-field_asst_start_date'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1851,6 +1879,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       ),
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'date',
       'settings' => array(
         'cache_count' => '4',
@@ -1927,7 +1956,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assessment-field_asst_status'
+  // Exported field: 'node-assessment-field_asst_status'.
   $fields['node-assessment-field_asst_status'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1941,6 +1970,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'value',
         ),
       ),
+      'locked' => '0',
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
@@ -1991,7 +2021,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assessment-field_asst_unit'
+  // Exported field: 'node-assessment-field_asst_unit'.
   $fields['node-assessment-field_asst_unit'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2008,6 +2038,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'value',
         ),
       ),
+      'locked' => '0',
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
@@ -2058,7 +2089,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assessment-field_clusters'
+  // Exported field: 'node-assessment-field_clusters'.
   $fields['node-assessment-field_clusters'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2079,6 +2110,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -2087,6 +2119,7 @@ function humanitarianresponse_assessments_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'options_list_callback' => 'i18n_taxonomy_allowed_values',
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -2128,7 +2161,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assessment-field_locations'
+  // Exported field: 'node-assessment-field_locations'.
   $fields['node-assessment-field_locations'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2149,6 +2182,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -2157,6 +2191,7 @@ function humanitarianresponse_assessments_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'options_list_callback' => 'i18n_taxonomy_allowed_values',
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -2198,7 +2233,7 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assessment-field_organizations'
+  // Exported field: 'node-assessment-field_organizations'.
   $fields['node-assessment-field_organizations'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2219,6 +2254,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -2227,6 +2263,7 @@ function humanitarianresponse_assessments_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'options_list_callback' => 'i18n_taxonomy_allowed_values',
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
