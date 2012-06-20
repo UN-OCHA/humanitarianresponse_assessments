@@ -459,6 +459,34 @@ function humanitarianresponse_assessments_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'resources/assessment-registry';
+  $translatables['assessment_registry'] = array(
+    t('Master'),
+    t('Assessment Registry'),
+    t('more'),
+    t('Search'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('There are no results for this request'),
+    t('term'),
+    t('Assessment Title'),
+    t('Geographical Area(s)'),
+    t('Leading/Coordinating Organizations'),
+    t('Cluster(s)'),
+    t('Assessment Start Date'),
+    t('Assessment Status'),
+    t('Report'),
+    t('Questionnaire'),
+    t('Data'),
+    t('Clusters'),
+    t('Organizations'),
+    t('Location'),
+    t('Page'),
+  );
   $export['assessment_registry'] = $view;
 
   return $export;
