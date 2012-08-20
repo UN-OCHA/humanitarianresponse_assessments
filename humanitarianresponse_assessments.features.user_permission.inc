@@ -10,6 +10,16 @@
 function humanitarianresponse_assessments_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: create assessment content.
+  $permissions['create assessment content'] = array(
+    'name' => 'create assessment content',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: create field_ass_data_file_rest.
   $permissions['create field_ass_data_file_rest'] = array(
     'name' => 'create field_ass_data_file_rest',
@@ -76,6 +86,16 @@ function humanitarianresponse_assessments_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
+  // Exported permission: delete own assessment content.
+  $permissions['delete own assessment content'] = array(
+    'name' => 'delete own assessment content',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: edit field_ass_data_file_rest.
   $permissions['edit field_ass_data_file_rest'] = array(
     'name' => 'edit field_ass_data_file_rest',
@@ -140,6 +160,16 @@ function humanitarianresponse_assessments_user_default_permissions() {
       2 => 'manager',
     ),
     'module' => 'field_permissions',
+  );
+
+  // Exported permission: edit own assessment content.
+  $permissions['edit own assessment content'] = array(
+    'name' => 'edit own assessment content',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'editor',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: edit own field_ass_data_file_rest.
