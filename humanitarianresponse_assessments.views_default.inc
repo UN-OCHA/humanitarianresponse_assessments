@@ -150,7 +150,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['field_locations']['type'] = 'hs_taxonomy_term_reference_hierarchical_text';
   $handler->display->display_options['fields']['field_locations']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_locations']['multi_type'] = 'ul';
-  /* Field: Content: Source */
+  /* Field: Content: Organization(s) */
   $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['fields']['field_organizations']['table'] = 'field_data_field_organizations';
   $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
@@ -247,7 +247,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['filters']['field_clusters_tid']['expose']['identifier'] = 'field_clusters_tid';
   $handler->display->display_options['filters']['field_clusters_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_clusters_tid']['vocabulary'] = 'clusters';
-  /* Filter criterion: Content: Source (field_organizations) */
+  /* Filter criterion: Content: Organization(s) (field_organizations) */
   $handler->display->display_options['filters']['field_organizations_tid']['id'] = 'field_organizations_tid';
   $handler->display->display_options['filters']['field_organizations_tid']['table'] = 'field_data_field_organizations';
   $handler->display->display_options['filters']['field_organizations_tid']['field'] = 'field_organizations_tid';
@@ -271,6 +271,24 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['filters']['field_locations_tid']['expose']['operator'] = 'field_locations_tid_op';
   $handler->display->display_options['filters']['field_locations_tid']['expose']['identifier'] = 'field_locations_tid';
   $handler->display->display_options['filters']['field_locations_tid']['vocabulary'] = 'locations';
+  /* Filter criterion: Content: Assessment Status (field_asst_status) */
+  $handler->display->display_options['filters']['field_asst_status_value']['id'] = 'field_asst_status_value';
+  $handler->display->display_options['filters']['field_asst_status_value']['table'] = 'field_data_field_asst_status';
+  $handler->display->display_options['filters']['field_asst_status_value']['field'] = 'field_asst_status_value';
+  $handler->display->display_options['filters']['field_asst_status_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_asst_status_value']['expose']['operator_id'] = 'field_asst_status_value_op';
+  $handler->display->display_options['filters']['field_asst_status_value']['expose']['label'] = 'Assessment Status';
+  $handler->display->display_options['filters']['field_asst_status_value']['expose']['operator'] = 'field_asst_status_value_op';
+  $handler->display->display_options['filters']['field_asst_status_value']['expose']['identifier'] = 'field_asst_status_value';
+  $handler->display->display_options['filters']['field_asst_status_value']['expose']['remember'] = TRUE;
+  $handler->display->display_options['filters']['field_asst_status_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    218860149 => 0,
+    200153887 => 0,
+    52310416 => 0,
+    30037204 => 0,
+  );
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
