@@ -1653,7 +1653,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_asst_contact_telephone',
       'label' => 'Contact Telephone/Mobile',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'text_processing' => '0',
         'user_register_form' => FALSE,
@@ -2335,7 +2335,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_asst_sample_size',
       'label' => 'Sample Size',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'max' => '',
         'min' => '0',
