@@ -1388,7 +1388,7 @@ function humanitarianresponse_assessments_field_default_fields() {
   $fields['node-assessment-field_asst_collection_method'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_asst_collection_method',
@@ -1410,6 +1410,10 @@ function humanitarianresponse_assessments_field_default_fields() {
           'key_informant' => 'Key Informant Interview',
           'focus_group' => 'Focus group discussion',
           'observation' => 'Observation',
+          'baseline' => 'Baseline data analysis',
+          'phone' => 'Phone Interview',
+          'field' => 'Field Interview',
+          'email' => 'Email / Mail Interview',
         ),
         'allowed_values_function' => '',
       ),
@@ -1453,7 +1457,7 @@ function humanitarianresponse_assessments_field_default_fields() {
         'active' => 1,
         'module' => 'options',
         'settings' => array(),
-        'type' => 'options_select',
+        'type' => 'options_buttons',
         'weight' => '18',
       ),
     ),
@@ -1812,6 +1816,108 @@ function humanitarianresponse_assessments_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-assessment-field_asst_key_findings'.
+  $fields['node-assessment-field_asst_key_findings'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_asst_key_findings',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'assessment',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 24,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_asst_key_findings',
+      'label' => 'Key findings',
+      'required' => 0,
+      'settings' => array(
+        'better_formats' => array(
+          'allowed_formats' => array(
+            'filtered_html' => 'filtered_html',
+            'full_html' => 'full_html',
+            'plain_text' => 'plain_text',
+            'simple' => 'simple',
+          ),
+          'allowed_formats_toggle' => 0,
+          'default_order_toggle' => 0,
+          'default_order_wrapper' => array(
+            'formats' => array(
+              'filtered_html' => array(
+                'weight' => '0',
+              ),
+              'full_html' => array(
+                'weight' => '0',
+              ),
+              'plain_text' => array(
+                'weight' => '10',
+              ),
+              'simple' => array(
+                'weight' => '0',
+              ),
+            ),
+          ),
+        ),
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'rows' => '5',
+        ),
+        'type' => 'text_textarea',
+        'weight' => '15',
+      ),
+    ),
+  );
+
   // Exported field: 'node-assessment-field_asst_level_representation'.
   $fields['node-assessment-field_asst_level_representation'] = array(
     'field_config' => array(
@@ -1833,6 +1939,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
+          'national' => 'National',
           'governorate' => 'Governorate',
           'district' => 'District',
           'sub_district' => 'Sub-district',
@@ -2290,16 +2397,26 @@ function humanitarianresponse_assessments_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_asst_sample_size',
-      'field_permissions' => array(
-        'type' => '0',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
       ),
-      'foreign keys' => array(),
-      'indexes' => array(),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
       'locked' => '0',
-      'module' => 'number',
-      'settings' => array(),
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
       'translatable' => '0',
-      'type' => 'number_integer',
+      'type' => 'text',
     ),
     'field_instance' => array(
       'bundle' => 'assessment',
@@ -2309,15 +2426,10 @@ function humanitarianresponse_assessments_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 0,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_integer',
-          'weight' => 19,
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 25,
         ),
         'ical' => array(
           'label' => 'above',
@@ -2335,19 +2447,17 @@ function humanitarianresponse_assessments_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_asst_sample_size',
       'label' => 'Sample Size',
-      'required' => 0,
+      'required' => FALSE,
       'settings' => array(
-        'max' => '',
-        'min' => '0',
-        'prefix' => '',
-        'suffix' => '',
+        'text_processing' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
         'weight' => '20',
       ),
     ),
@@ -2472,7 +2582,6 @@ function humanitarianresponse_assessments_field_default_fields() {
         'allowed_values' => array(
           'Planned' => 'Planned',
           'Ongoing' => 'Ongoing',
-          'Key findings' => 'Key findings',
           'Draft' => 'Draft',
           'Field work completed' => 'Field work completed',
           'Report completed' => 'Report completed',
@@ -3264,6 +3373,7 @@ function humanitarianresponse_assessments_field_default_fields() {
   t('Description');
   t('Frequency');
   t('Geographical Area(s)');
+  t('Key findings');
   t('Leading/Coordinating Organizations');
   t('Level of Representation');
   t('Methodology');
