@@ -304,7 +304,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['style_options']['provide_file'] = 1;
   $handler->display->display_options['style_options']['filename'] = 'assessments.xls';
   $handler->display->display_options['style_options']['parent_sort'] = 0;
-  $handler->display->display_options['path'] = 'resources/assessment-registry/xls';
+  $handler->display->display_options['path'] = 'resources/assessment-registry.xls';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
     'default' => 0,
