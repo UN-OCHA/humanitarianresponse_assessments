@@ -66,6 +66,7 @@ features[field][] = node-assessment-field_asst_status
 features[field][] = node-assessment-field_asst_subject
 features[field][] = node-assessment-field_asst_unit
 features[field][] = node-assessment-field_clusters
+features[field][] = node-assessment-field_linked_resources
 features[field][] = node-assessment-field_locations
 features[field][] = node-assessment-field_organizations
 features[field][] = node-assessment-field_population_type

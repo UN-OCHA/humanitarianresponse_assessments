@@ -294,6 +294,21 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'resources/assessment-registry';
+
+  /* Display: XLS */
+  $handler = $view->new_display('views_data_export', 'XLS', 'xls');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = 'assessments.xls';
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['path'] = 'resources/assessment-registry/xls';
+  $handler->display->display_options['displays'] = array(
+    'page' => 'page',
+    'default' => 0,
+  );
   $translatables['assessment_registry'] = array(
     t('Master'),
     t('Assessment Registry'),
@@ -325,6 +340,7 @@ function humanitarianresponse_assessments_views_default_views() {
     t('Organizations'),
     t('Location'),
     t('Page'),
+    t('XLS'),
   );
   $export['assessment_registry'] = $view;
 

@@ -1414,6 +1414,8 @@ function humanitarianresponse_assessments_field_default_fields() {
           'phone' => 'Phone Interview',
           'field' => 'Field Interview',
           'email' => 'Email / Mail Interview',
+          'mixed' => 'Mixed',
+          'other' => 'Other',
         ),
         'allowed_values_function' => '',
       ),
@@ -2582,7 +2584,7 @@ function humanitarianresponse_assessments_field_default_fields() {
         'allowed_values' => array(
           'Planned' => 'Planned',
           'Ongoing' => 'Ongoing',
-          'Draft' => 'Draft',
+          'Draft' => 'Draft / Preliminary Results',
           'Field work completed' => 'Field work completed',
           'Report completed' => 'Report completed',
         ),
@@ -2886,6 +2888,98 @@ function humanitarianresponse_assessments_field_default_fields() {
         'settings' => array(),
         'type' => 'options_buttons',
         'weight' => '0',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-assessment-field_linked_resources'.
+  $fields['node-assessment-field_linked_resources'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_linked_resources',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'link',
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
+      ),
+      'translatable' => '0',
+      'type' => 'link_field',
+    ),
+    'field_instance' => array(
+      'bundle' => 'assessment',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => 26,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_linked_resources',
+      'label' => 'Linked Resources',
+      'required' => 0,
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'configurable_title' => 0,
+          'rel' => '',
+          'target' => 'user',
+          'title' => '',
+        ),
+        'display' => array(
+          'url_cutoff' => '80',
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => '128',
+        'title_value' => '',
+        'url' => 0,
+        'user_register_form' => FALSE,
+        'validate_url' => 1,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_field',
+        'weight' => '52',
       ),
     ),
   );
@@ -3376,6 +3470,7 @@ function humanitarianresponse_assessments_field_default_fields() {
   t('Key findings');
   t('Leading/Coordinating Organizations');
   t('Level of Representation');
+  t('Linked Resources');
   t('Methodology');
   t('Name');
   t('Other location');
