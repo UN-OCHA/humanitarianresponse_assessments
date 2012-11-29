@@ -3049,7 +3049,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_locations',
-      'label' => 'Geographical Area(s)',
+      'label' => 'Location',
       'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -3466,7 +3466,7 @@ function humanitarianresponse_assessments_field_default_fields() {
   t('Data Instructions');
   t('Description');
   t('Frequency');
-  t('Geographical Area(s)');
+  t('Location');
   t('Key findings');
   t('Leading/Coordinating Organizations');
   t('Level of Representation');

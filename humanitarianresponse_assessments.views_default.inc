@@ -145,7 +145,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['field_locations']['id'] = 'field_locations';
   $handler->display->display_options['fields']['field_locations']['table'] = 'field_data_field_locations';
   $handler->display->display_options['fields']['field_locations']['field'] = 'field_locations';
-  $handler->display->display_options['fields']['field_locations']['label'] = 'Geographical Area(s)';
+  $handler->display->display_options['fields']['field_locations']['label'] = 'Location';
   $handler->display->display_options['fields']['field_locations']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_locations']['type'] = 'hs_taxonomy_term_reference_hierarchical_text';
   $handler->display->display_options['fields']['field_locations']['delta_offset'] = '0';
@@ -328,7 +328,7 @@ function humanitarianresponse_assessments_views_default_views() {
     t('There are no results for this request'),
     t('term'),
     t('Assessment Title'),
-    t('Geographical Area(s)'),
+    t('Location'),
     t('Leading/Coordinating Organizations'),
     t('Clusters'),
     t('Assessment Start Date'),
