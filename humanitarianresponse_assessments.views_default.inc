@@ -158,7 +158,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['field_organizations']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_organizations']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_organizations']['multi_type'] = 'ul';
-  /* Field: Content: Cluster(s) */
+  /* Field: Content: Cluster */
   $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
@@ -235,7 +235,7 @@ function humanitarianresponse_assessments_views_default_views() {
     'assessment' => 'assessment',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Cluster(s) (field_clusters) */
+  /* Filter criterion: Content: Clusters (field_clusters) */
   $handler->display->display_options['filters']['field_clusters_tid']['id'] = 'field_clusters_tid';
   $handler->display->display_options['filters']['field_clusters_tid']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['filters']['field_clusters_tid']['field'] = 'field_clusters_tid';
@@ -330,7 +330,7 @@ function humanitarianresponse_assessments_views_default_views() {
     t('Assessment Title'),
     t('Geographical Area(s)'),
     t('Leading/Coordinating Organizations'),
-    t('Cluster(s)'),
+    t('Clusters'),
     t('Assessment Start Date'),
     t('Assessment Status'),
     t('Report'),

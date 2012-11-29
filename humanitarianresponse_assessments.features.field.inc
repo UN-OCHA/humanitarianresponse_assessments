@@ -2877,7 +2877,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_clusters',
-      'label' => 'Cluster(s)',
+      'label' => 'Clusters',
       'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -3457,7 +3457,7 @@ function humanitarianresponse_assessments_field_default_fields() {
   t('Assessment Start Date');
   t('Assessment Status');
   t('Assessment Title');
-  t('Cluster(s)');
+  t('Clusters');
   t('Collection Method');
   t('Contact Email');
   t('Contact Name');
