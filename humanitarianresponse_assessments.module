@@ -5,3 +5,14 @@
  */
 
 include_once('humanitarianresponse_assessments.features.inc');
+
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function humanitarianresponse_assessments_form_assessment_node_form_alter(&$form, &$form_state, $form_id) {
+  if (module_exists('entityconnect') && isset($form_state['#entityconnect_child_form'])) {
+    $assessments_batch_input = $form_state['#entityconnect_child_form']->data['form_state']['input'];
+    $form['field_clusters']['und']['#default_value'] = array($assessments_batch_input['field_cluster']['und']);
+  }
+}
