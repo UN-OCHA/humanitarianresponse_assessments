@@ -39,6 +39,9 @@ function humanitarianresponse_assessments_field_default_fields() {
       'settings' => array(
         'display_default' => 0,
         'display_field' => 0,
+        'entity_translation_sync' => array(
+          0 => 'fid',
+        ),
         'uri_scheme' => 'private',
       ),
       'translatable' => '0',
@@ -69,6 +72,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'description_field' => 0,
+        'entity_translation_sync' => FALSE,
         'file_directory' => 'assessments',
         'file_extensions' => 'txt pdf doc docx xls xlsx zip rar',
         'max_filesize' => '',
@@ -78,6 +82,20 @@ function humanitarianresponse_assessments_field_default_fields() {
         'active' => 1,
         'module' => 'file',
         'settings' => array(
+          'filefield_sources' => array(
+            'filefield_sources' => array(),
+            'source_attach' => array(
+              'absolute' => 0,
+              'attach_mode' => 'move',
+              'path' => 'file_attach',
+            ),
+            'source_imce' => array(
+              'imce_mode' => 0,
+            ),
+            'source_reference' => array(
+              'autocomplete' => '0',
+            ),
+          ),
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
@@ -112,6 +130,9 @@ function humanitarianresponse_assessments_field_default_fields() {
       'settings' => array(
         'display_default' => 0,
         'display_field' => 0,
+        'entity_translation_sync' => array(
+          0 => 'fid',
+        ),
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -142,6 +163,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'description_field' => 0,
+        'entity_translation_sync' => FALSE,
         'file_directory' => 'assessments',
         'file_extensions' => 'txt pdf doc docx xls xlsx zip rar',
         'max_filesize' => '',
@@ -151,6 +173,20 @@ function humanitarianresponse_assessments_field_default_fields() {
         'active' => 1,
         'module' => 'file',
         'settings' => array(
+          'filefield_sources' => array(
+            'filefield_sources' => array(),
+            'source_attach' => array(
+              'absolute' => 0,
+              'attach_mode' => 'move',
+              'path' => 'file_attach',
+            ),
+            'source_imce' => array(
+              'imce_mode' => 0,
+            ),
+            'source_reference' => array(
+              'autocomplete' => '0',
+            ),
+          ),
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
@@ -186,6 +222,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'max_length' => '255',
       ),
       'translatable' => '0',
@@ -216,6 +253,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Data Instructions',
       'required' => 0,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
@@ -253,6 +291,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'url_cutoff' => 80,
         ),
         'enable_tokens' => 1,
+        'entity_translation_sync' => FALSE,
         'title' => 'optional',
         'title_maxlength' => 128,
         'title_value' => '',
@@ -297,6 +336,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'url_cutoff' => '80',
         ),
         'enable_tokens' => 1,
+        'entity_translation_sync' => FALSE,
         'title' => 'none',
         'title_maxlength' => '128',
         'title_value' => '',
@@ -339,6 +379,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'url_cutoff' => 80,
         ),
         'enable_tokens' => 1,
+        'entity_translation_sync' => FALSE,
         'title' => 'optional',
         'title_maxlength' => 128,
         'title_value' => '',
@@ -383,6 +424,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'url_cutoff' => '80',
         ),
         'enable_tokens' => 1,
+        'entity_translation_sync' => FALSE,
         'title' => 'none',
         'title_maxlength' => '128',
         'title_value' => '',
@@ -428,6 +470,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'Not Applicable' => 'Not Applicable',
         ),
         'allowed_values_function' => '',
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'list_text',
@@ -457,6 +500,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Data Accessibilty',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -497,6 +541,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'Not Applicable' => 'Not Applicable',
         ),
         'allowed_values_function' => '',
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'list_text',
@@ -526,6 +571,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Questionnaire Accessibility',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -564,6 +610,9 @@ function humanitarianresponse_assessments_field_default_fields() {
       'settings' => array(
         'display_default' => 0,
         'display_field' => 0,
+        'entity_translation_sync' => array(
+          0 => 'fid',
+        ),
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -594,6 +643,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'description_field' => 0,
+        'entity_translation_sync' => FALSE,
         'file_directory' => 'assessments',
         'file_extensions' => 'txt pdf doc docx xls xlsx zip rar',
         'max_filesize' => '',
@@ -603,6 +653,20 @@ function humanitarianresponse_assessments_field_default_fields() {
         'active' => 1,
         'module' => 'file',
         'settings' => array(
+          'filefield_sources' => array(
+            'filefield_sources' => array(),
+            'source_attach' => array(
+              'absolute' => 0,
+              'attach_mode' => 'move',
+              'path' => 'file_attach',
+            ),
+            'source_imce' => array(
+              'imce_mode' => 0,
+            ),
+            'source_reference' => array(
+              'autocomplete' => '0',
+            ),
+          ),
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
@@ -640,6 +704,9 @@ function humanitarianresponse_assessments_field_default_fields() {
       'settings' => array(
         'display_default' => 0,
         'display_field' => 0,
+        'entity_translation_sync' => array(
+          0 => 'fid',
+        ),
         'uri_scheme' => 'private',
       ),
       'translatable' => '0',
@@ -670,6 +737,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'description_field' => 0,
+        'entity_translation_sync' => FALSE,
         'file_directory' => 'assessments',
         'file_extensions' => 'txt pdf doc docx xls xlsx zip rar',
         'max_filesize' => '',
@@ -679,6 +747,20 @@ function humanitarianresponse_assessments_field_default_fields() {
         'active' => 1,
         'module' => 'file',
         'settings' => array(
+          'filefield_sources' => array(
+            'filefield_sources' => array(),
+            'source_attach' => array(
+              'absolute' => 0,
+              'attach_mode' => 'move',
+              'path' => 'file_attach',
+            ),
+            'source_imce' => array(
+              'imce_mode' => 0,
+            ),
+            'source_reference' => array(
+              'autocomplete' => '0',
+            ),
+          ),
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
@@ -714,6 +796,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'max_length' => '255',
       ),
       'translatable' => '0',
@@ -744,6 +827,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Questionnaire Instructions',
       'required' => 0,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
@@ -781,6 +865,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'url_cutoff' => 80,
         ),
         'enable_tokens' => 1,
+        'entity_translation_sync' => FALSE,
         'title' => 'optional',
         'title_maxlength' => 128,
         'title_value' => '',
@@ -825,6 +910,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'url_cutoff' => '80',
         ),
         'enable_tokens' => 1,
+        'entity_translation_sync' => FALSE,
         'title' => 'none',
         'title_maxlength' => '128',
         'title_value' => '',
@@ -867,6 +953,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'url_cutoff' => 80,
         ),
         'enable_tokens' => 1,
+        'entity_translation_sync' => FALSE,
         'title' => 'optional',
         'title_maxlength' => 128,
         'title_value' => '',
@@ -911,6 +998,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'url_cutoff' => '80',
         ),
         'enable_tokens' => 1,
+        'entity_translation_sync' => FALSE,
         'title' => 'none',
         'title_maxlength' => '128',
         'title_value' => '',
@@ -954,6 +1042,9 @@ function humanitarianresponse_assessments_field_default_fields() {
       'settings' => array(
         'display_default' => 0,
         'display_field' => 0,
+        'entity_translation_sync' => array(
+          0 => 'fid',
+        ),
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -984,6 +1075,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'description_field' => 0,
+        'entity_translation_sync' => FALSE,
         'file_directory' => 'assessments',
         'file_extensions' => 'txt pdf doc docx xls xlsx zip rar',
         'max_filesize' => '',
@@ -993,6 +1085,20 @@ function humanitarianresponse_assessments_field_default_fields() {
         'active' => 1,
         'module' => 'file',
         'settings' => array(
+          'filefield_sources' => array(
+            'filefield_sources' => array(),
+            'source_attach' => array(
+              'absolute' => 0,
+              'attach_mode' => 'move',
+              'path' => 'file_attach',
+            ),
+            'source_imce' => array(
+              'imce_mode' => 0,
+            ),
+            'source_reference' => array(
+              'autocomplete' => '0',
+            ),
+          ),
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
@@ -1030,6 +1136,9 @@ function humanitarianresponse_assessments_field_default_fields() {
       'settings' => array(
         'display_default' => 0,
         'display_field' => 0,
+        'entity_translation_sync' => array(
+          0 => 'fid',
+        ),
         'uri_scheme' => 'private',
       ),
       'translatable' => '0',
@@ -1060,6 +1169,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'description_field' => 0,
+        'entity_translation_sync' => FALSE,
         'file_directory' => 'assessments',
         'file_extensions' => 'txt pdf doc docx xls xlsx zip rar',
         'max_filesize' => '',
@@ -1069,6 +1179,20 @@ function humanitarianresponse_assessments_field_default_fields() {
         'active' => 1,
         'module' => 'file',
         'settings' => array(
+          'filefield_sources' => array(
+            'filefield_sources' => array(),
+            'source_attach' => array(
+              'absolute' => 0,
+              'attach_mode' => 'move',
+              'path' => 'file_attach',
+            ),
+            'source_imce' => array(
+              'imce_mode' => 0,
+            ),
+            'source_reference' => array(
+              'autocomplete' => '0',
+            ),
+          ),
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
@@ -1101,6 +1225,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'max_length' => '255',
       ),
       'translatable' => '0',
@@ -1131,6 +1256,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Report Instructions',
       'required' => 0,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
@@ -1168,6 +1294,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'url_cutoff' => 80,
         ),
         'enable_tokens' => 1,
+        'entity_translation_sync' => FALSE,
         'title' => 'optional',
         'title_maxlength' => 128,
         'title_value' => '',
@@ -1212,6 +1339,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'url_cutoff' => '80',
         ),
         'enable_tokens' => 1,
+        'entity_translation_sync' => FALSE,
         'title' => 'none',
         'title_maxlength' => '128',
         'title_value' => '',
@@ -1254,6 +1382,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'url_cutoff' => 80,
         ),
         'enable_tokens' => 1,
+        'entity_translation_sync' => FALSE,
         'title' => 'optional',
         'title_maxlength' => 128,
         'title_value' => '',
@@ -1298,6 +1427,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'url_cutoff' => '80',
         ),
         'enable_tokens' => 1,
+        'entity_translation_sync' => FALSE,
         'title' => 'none',
         'title_maxlength' => '128',
         'title_value' => '',
@@ -1343,6 +1473,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'Not Applicable' => 'Not Applicable',
         ),
         'allowed_values_function' => '',
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'list_text',
@@ -1372,6 +1503,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Report Accessibility',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1418,6 +1550,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'other' => 'Other',
         ),
         'allowed_values_function' => '',
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'list_text',
@@ -1453,6 +1586,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Collection Method',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1477,7 +1611,9 @@ function humanitarianresponse_assessments_field_default_fields() {
       'indexes' => array(),
       'locked' => '0',
       'module' => 'email',
-      'settings' => array(),
+      'settings' => array(
+        'entity_translation_sync' => FALSE,
+      ),
       'translatable' => '0',
       'type' => 'email',
     ),
@@ -1512,6 +1648,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Contact Email',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1550,6 +1687,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'max_length' => '100',
       ),
       'translatable' => '0',
@@ -1586,6 +1724,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Contact Name',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
@@ -1625,6 +1764,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'max_length' => '100',
       ),
       'translatable' => '0',
@@ -1661,6 +1801,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Contact Telephone/Mobile',
       'required' => 0,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
@@ -1689,6 +1830,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'locked' => '0',
       'module' => 'field_collection',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'path' => '',
       ),
       'translatable' => '0',
@@ -1731,6 +1873,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Assessment Data',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1771,6 +1914,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'other' => 'Other',
         ),
         'allowed_values_function' => '',
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'list_text',
@@ -1806,6 +1950,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Frequency',
       'required' => 0,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1844,7 +1989,9 @@ function humanitarianresponse_assessments_field_default_fields() {
       ),
       'locked' => '0',
       'module' => 'text',
-      'settings' => array(),
+      'settings' => array(
+        'entity_translation_sync' => FALSE,
+      ),
       'translatable' => '0',
       'type' => 'text_long',
     ),
@@ -1905,6 +2052,7 @@ function humanitarianresponse_assessments_field_default_fields() {
             ),
           ),
         ),
+        'entity_translation_sync' => FALSE,
         'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
@@ -1950,6 +2098,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'other' => 'Other',
         ),
         'allowed_values_function' => '',
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'list_text',
@@ -1985,6 +2134,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Level of Representation',
       'required' => 0,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -2023,7 +2173,9 @@ function humanitarianresponse_assessments_field_default_fields() {
       ),
       'locked' => '0',
       'module' => 'text',
-      'settings' => array(),
+      'settings' => array(
+        'entity_translation_sync' => FALSE,
+      ),
       'translatable' => '0',
       'type' => 'text_long',
     ),
@@ -2058,6 +2210,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Methodology',
       'required' => 0,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
@@ -2100,6 +2253,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'max_length' => '255',
       ),
       'translatable' => '0',
@@ -2162,6 +2316,7 @@ function humanitarianresponse_assessments_field_default_fields() {
             ),
           ),
         ),
+        'entity_translation_sync' => FALSE,
         'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
@@ -2207,6 +2362,7 @@ function humanitarianresponse_assessments_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -2242,6 +2398,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Participating Organization(s)',
       'required' => 0,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -2270,6 +2427,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'locked' => '0',
       'module' => 'field_collection',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'path' => '',
       ),
       'translatable' => '0',
@@ -2312,6 +2470,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Assessment Questionnaire',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -2337,6 +2496,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'locked' => '0',
       'module' => 'field_collection',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'path' => '',
       ),
       'translatable' => '0',
@@ -2379,6 +2539,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Assessment Report',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -2415,6 +2576,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'max_length' => '255',
       ),
       'translatable' => '0',
@@ -2451,6 +2613,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Sample Size',
       'required' => FALSE,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'text_processing' => 0,
         'user_register_form' => FALSE,
       ),
@@ -2483,6 +2646,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'settings' => array(
         'cache_count' => '4',
         'cache_enabled' => 0,
+        'entity_translation_sync' => FALSE,
         'granularity' => array(
           'day' => 'day',
           'hour' => 0,
@@ -2540,6 +2704,7 @@ function humanitarianresponse_assessments_field_default_fields() {
         'default_value2' => 'same',
         'default_value_code' => '',
         'default_value_code2' => '',
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -2589,6 +2754,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'Report completed' => 'Report completed',
         ),
         'allowed_values_function' => '',
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'list_text',
@@ -2624,6 +2790,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Assessment Status',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -2662,7 +2829,9 @@ function humanitarianresponse_assessments_field_default_fields() {
       ),
       'locked' => '0',
       'module' => 'text',
-      'settings' => array(),
+      'settings' => array(
+        'entity_translation_sync' => FALSE,
+      ),
       'translatable' => '0',
       'type' => 'text_long',
     ),
@@ -2723,6 +2892,7 @@ function humanitarianresponse_assessments_field_default_fields() {
             ),
           ),
         ),
+        'entity_translation_sync' => FALSE,
         'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
@@ -2765,6 +2935,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'Individuals' => 'Individuals',
         ),
         'allowed_values_function' => '',
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'list_text',
@@ -2800,6 +2971,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Unit of Measurement',
       'required' => 0,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -2845,6 +3017,7 @@ function humanitarianresponse_assessments_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -2880,6 +3053,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Clusters',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -2917,6 +3091,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'url_cutoff' => 80,
         ),
         'enable_tokens' => 1,
+        'entity_translation_sync' => FALSE,
         'title' => 'optional',
         'title_maxlength' => 128,
         'title_value' => '',
@@ -2967,6 +3142,7 @@ function humanitarianresponse_assessments_field_default_fields() {
           'url_cutoff' => '80',
         ),
         'enable_tokens' => 1,
+        'entity_translation_sync' => FALSE,
         'title' => 'optional',
         'title_maxlength' => '128',
         'title_value' => '',
@@ -3017,6 +3193,7 @@ function humanitarianresponse_assessments_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -3052,6 +3229,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Location',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -3094,6 +3272,7 @@ function humanitarianresponse_assessments_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -3129,6 +3308,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Leading/Coordinating Organizations',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -3177,6 +3357,7 @@ function humanitarianresponse_assessments_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -3212,6 +3393,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Type of Population',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -3251,6 +3433,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'max_length' => 255,
       ),
       'translatable' => '1',
@@ -3286,6 +3469,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Assessment Title',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'hide_label' => array(
           'entity' => 0,
           'page' => 0,
@@ -3328,7 +3512,9 @@ function humanitarianresponse_assessments_field_default_fields() {
       ),
       'locked' => '0',
       'module' => 'text',
-      'settings' => array(),
+      'settings' => array(
+        'entity_translation_sync' => FALSE,
+      ),
       'translatable' => '1',
       'type' => 'text_with_summary',
     ),
@@ -3357,6 +3543,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'required' => FALSE,
       'settings' => array(
         'display_summary' => 0,
+        'entity_translation_sync' => FALSE,
         'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
@@ -3396,6 +3583,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'max_length' => 255,
       ),
       'translatable' => '1',
@@ -3425,6 +3613,7 @@ function humanitarianresponse_assessments_field_default_fields() {
       'label' => 'Name',
       'required' => TRUE,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'text_processing' => 0,
         'user_register_form' => FALSE,
       ),
@@ -3466,11 +3655,11 @@ function humanitarianresponse_assessments_field_default_fields() {
   t('Data Instructions');
   t('Description');
   t('Frequency');
-  t('Location');
   t('Key findings');
   t('Leading/Coordinating Organizations');
   t('Level of Representation');
   t('Linked Resources');
+  t('Location');
   t('Methodology');
   t('Name');
   t('Other location');

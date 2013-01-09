@@ -16,3 +16,10 @@ function humanitarianresponse_assessments_form_assessment_node_form_alter(&$form
     $form['field_clusters']['und']['#default_value'] = array($assessments_batch_input['field_cluster']['und']);
   }
 }
+
+/**
+ * Implements hook_cron()
+ */
+function humanitarianresponse_assessments_cron() {
+  humanitarianresponse_core_feeds_check('csv_population_types', 'http://terms.humanitarianresponse.info/population-types.csv');
+}

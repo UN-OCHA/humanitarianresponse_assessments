@@ -145,7 +145,6 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['field_locations']['id'] = 'field_locations';
   $handler->display->display_options['fields']['field_locations']['table'] = 'field_data_field_locations';
   $handler->display->display_options['fields']['field_locations']['field'] = 'field_locations';
-  $handler->display->display_options['fields']['field_locations']['label'] = 'Location';
   $handler->display->display_options['fields']['field_locations']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_locations']['type'] = 'hs_taxonomy_term_reference_hierarchical_text';
   $handler->display->display_options['fields']['field_locations']['delta_offset'] = '0';
@@ -158,7 +157,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['field_organizations']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_organizations']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_organizations']['multi_type'] = 'ul';
-  /* Field: Content: Cluster */
+  /* Field: Content: Clusters */
   $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
@@ -336,9 +335,7 @@ function humanitarianresponse_assessments_views_default_views() {
     t('Report'),
     t('Questionnaire'),
     t('Data'),
-    t('Clusters'),
     t('Organizations'),
-    t('Location'),
     t('Page'),
     t('XLS'),
   );
