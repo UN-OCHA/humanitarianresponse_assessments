@@ -300,6 +300,15 @@ function humanitarianresponse_assessments_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['empty'] = TRUE;
+  $handler->display->display_options['header']['area']['content'] = '<p style="text-align: center;">Please note that the assessment registry can also be exported to Excel using the following link:</p>
+<p style="text-align: center;"><a href="/resources/assessment-registry.xls">Download</a></p>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['path'] = 'resources/assessment-registry';
 
   /* Display: XLS */
@@ -575,6 +584,8 @@ function humanitarianresponse_assessments_views_default_views() {
     t('Data'),
     t('Organizations'),
     t('Page'),
+    t('<p style="text-align: center;">Please note that the assessment registry can also be exported to Excel using the following link:</p>
+<p style="text-align: center;"><a href="/resources/assessment-registry.xls">Download</a></p>'),
     t('XLS'),
     t('field collection item from field_asst_data'),
     t('field collection item from field_asst_questionnaire'),
