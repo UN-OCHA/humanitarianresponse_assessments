@@ -121,6 +121,7 @@ features[variable][] = comment_default_per_page_assessment
 features[variable][] = comment_form_location_assessment
 features[variable][] = comment_preview_assessment
 features[variable][] = comment_subject_field_assessment
+features[variable][] = entity_translation_settings_taxonomy_term__population_types
 features[variable][] = field_bundle_settings_node__assessment
 features[variable][] = language_content_type_assessment
 features[variable][] = menu_options_assessment
