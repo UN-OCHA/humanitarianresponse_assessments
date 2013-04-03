@@ -13,9 +13,9 @@ function humanitarianresponse_assessments_taxonomy_default_vocabularies() {
       'name' => 'Population Types',
       'machine_name' => 'population_types',
       'description' => '',
-      'hierarchy' => '0',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => 0,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
