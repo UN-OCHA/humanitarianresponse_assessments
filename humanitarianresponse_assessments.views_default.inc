@@ -307,7 +307,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
   $handler->display->display_options['header']['area']['content'] = '<p style="text-align: center;">Please note that the assessment registry can also be exported to Excel using the following link:</p>
-<p style="text-align: center;"><a href="/resources/assessment-registry.xls">Download</a></p>';
+<p style="text-align: center;">Excel <a href="/resources/assessment-registry.xls">Download</a></p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['path'] = 'resources/assessment-registry';
 
@@ -554,6 +554,24 @@ function humanitarianresponse_assessments_views_default_views() {
     'page' => 'page',
     'default' => 0,
   );
+
+  /* Display: CSV */
+  $handler = $view->new_display('views_data_export', 'CSV', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = 'assessments.csv';
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['quote'] = 1;
+  $handler->display->display_options['style_options']['trim'] = 0;
+  $handler->display->display_options['style_options']['replace_newlines'] = 0;
+  $handler->display->display_options['style_options']['header'] = 1;
+  $handler->display->display_options['path'] = 'resources/assesment-registry.csv';
+  $handler->display->display_options['displays'] = array(
+    'page' => 'page',
+    'default' => 0,
+  );
   $translatables['assessment_registry'] = array(
     t('Master'),
     t('Assessment Registry'),
@@ -585,7 +603,7 @@ function humanitarianresponse_assessments_views_default_views() {
     t('Organizations'),
     t('Page'),
     t('<p style="text-align: center;">Please note that the assessment registry can also be exported to Excel using the following link:</p>
-<p style="text-align: center;"><a href="/resources/assessment-registry.xls">Download</a></p>'),
+<p style="text-align: center;">Excel <a href="/resources/assessment-registry.xls">Download</a></p>'),
     t('XLS'),
     t('field collection item from field_asst_data'),
     t('field collection item from field_asst_questionnaire'),
@@ -617,6 +635,7 @@ function humanitarianresponse_assessments_views_default_views() {
     t('Contact Email'),
     t('Contact Name'),
     t('Contact Telephone'),
+    t('CSV'),
   );
   $export['assessment_registry'] = $view;
 
