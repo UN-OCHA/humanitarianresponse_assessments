@@ -35,7 +35,7 @@ function humanitarianresponse_assessments_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsTermProcessor',
       'config' => array(
-        'vocabulary' => 'population_types',
+        'bundle' => 'population_types',
         'mappings' => array(
           0 => array(
             'source' => 'Name:en',
