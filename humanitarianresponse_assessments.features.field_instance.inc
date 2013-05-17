@@ -280,7 +280,11 @@ function humanitarianresponse_assessments_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_asst_data-field_data_accessibility'
   $field_instances['field_collection_item-field_asst_data-field_data_accessibility'] = array(
     'bundle' => 'field_asst_data',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'Publicly Available',
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -318,7 +322,11 @@ function humanitarianresponse_assessments_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_asst_questionnaire-field_ques_accessibility'
   $field_instances['field_collection_item-field_asst_questionnaire-field_ques_accessibility'] = array(
     'bundle' => 'field_asst_questionnaire',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'Publicly Available',
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -890,7 +898,11 @@ function humanitarianresponse_assessments_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_asst_report-field_report_accessibility'
   $field_instances['field_collection_item-field_asst_report-field_report_accessibility'] = array(
     'bundle' => 'field_asst_report',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'Publicly Available',
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
