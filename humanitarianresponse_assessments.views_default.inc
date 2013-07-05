@@ -149,7 +149,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['field_locations']['type'] = 'hs_taxonomy_term_reference_hierarchical_text';
   $handler->display->display_options['fields']['field_locations']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_locations']['multi_type'] = 'ul';
-  /* Field: Field: Source */
+  /* Field: Field: Organization */
   $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['fields']['field_organizations']['table'] = 'field_data_field_organizations';
   $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
@@ -165,7 +165,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['field_asst_participating_org']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_asst_participating_org']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_asst_participating_org']['multi_type'] = 'ul';
-  /* Field: Content: Clusters */
+  /* Field: Field: Clusters */
   $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
@@ -242,7 +242,7 @@ function humanitarianresponse_assessments_views_default_views() {
     'assessment' => 'assessment',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Clusters (field_clusters) */
+  /* Filter criterion: Field: Clusters (field_clusters) */
   $handler->display->display_options['filters']['field_clusters_tid']['id'] = 'field_clusters_tid';
   $handler->display->display_options['filters']['field_clusters_tid']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['filters']['field_clusters_tid']['field'] = 'field_clusters_tid';
@@ -254,7 +254,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['filters']['field_clusters_tid']['expose']['identifier'] = 'field_clusters_tid';
   $handler->display->display_options['filters']['field_clusters_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_clusters_tid']['vocabulary'] = 'clusters';
-  /* Filter criterion: Field: Source (field_organizations) */
+  /* Filter criterion: Field: Organization (field_organizations) */
   $handler->display->display_options['filters']['field_organizations_tid']['id'] = 'field_organizations_tid';
   $handler->display->display_options['filters']['field_organizations_tid']['table'] = 'field_data_field_organizations';
   $handler->display->display_options['filters']['field_organizations_tid']['field'] = 'field_organizations_tid';
@@ -309,7 +309,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['header']['area']['content'] = '<p style="text-align: center;">Please note that the assessment registry can also be exported to Excel using the following link:</p>
 <p style="text-align: center;">Excel <a href="/resources/assessment-registry.xls">Download</a></p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
-  $handler->display->display_options['path'] = 'resources/assessment-registry';
+  $handler->display->display_options['path'] = 'assessment-registry';
 
   /* Display: XLS */
   $handler = $view->new_display('views_data_export', 'XLS', 'xls');
@@ -376,7 +376,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['field_asst_other_location']['id'] = 'field_asst_other_location';
   $handler->display->display_options['fields']['field_asst_other_location']['table'] = 'field_data_field_asst_other_location';
   $handler->display->display_options['fields']['field_asst_other_location']['field'] = 'field_asst_other_location';
-  /* Field: Field: Source */
+  /* Field: Field: Organization */
   $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['fields']['field_organizations']['table'] = 'field_data_field_organizations';
   $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
@@ -392,7 +392,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['field_asst_participating_org']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_asst_participating_org']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_asst_participating_org']['separator'] = ';';
-  /* Field: Content: Clusters */
+  /* Field: Field: Clusters */
   $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
@@ -549,7 +549,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['field_asst_contact_telephone']['table'] = 'field_data_field_asst_contact_telephone';
   $handler->display->display_options['fields']['field_asst_contact_telephone']['field'] = 'field_asst_contact_telephone';
   $handler->display->display_options['fields']['field_asst_contact_telephone']['label'] = 'Contact Telephone';
-  $handler->display->display_options['path'] = 'resources/assessment-registry.xls';
+  $handler->display->display_options['path'] = 'assessment-registry.xls';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
     'default' => 0,
@@ -567,7 +567,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['style_options']['trim'] = 0;
   $handler->display->display_options['style_options']['replace_newlines'] = 0;
   $handler->display->display_options['style_options']['header'] = 1;
-  $handler->display->display_options['path'] = 'resources/assesment-registry.csv';
+  $handler->display->display_options['path'] = 'assesment-registry.csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
     'default' => 0,
