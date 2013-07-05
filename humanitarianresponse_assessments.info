@@ -103,6 +103,7 @@ features[field_instance][] = node-assessment-field_population_type
 features[field_instance][] = node-assessment-title_field
 features[field_instance][] = taxonomy_term-population_types-description_field
 features[field_instance][] = taxonomy_term-population_types-name_field
+features[menu_links][] = main-menu:assessment-registry
 features[node][] = assessment
 features[taxonomy][] = population_types
 features[user_permission][] = create assessment content
@@ -200,6 +201,7 @@ features_exclude[field][field_collection_item-field_asst_questionnaire-field_que
 features_exclude[field][field_collection_item-field_asst_questionnaire-field_ques_instructions] = field_collection_item-field_asst_questionnaire-field_ques_instructions
 features_exclude[field][field_collection_item-field_asst_questionnaire-field_ques_url] = field_collection_item-field_asst_questionnaire-field_ques_url
 features_exclude[field][field_collection_item-field_asst_questionnaire-field_ques_url_rest] = field_collection_item-field_asst_questionnaire-field_ques_url_rest
+features_exclude[menu_custom][main-menu] = main-menu
 l10n path = http://localize.humanitarianresponse.info/sites/localize.humanitarianresponse.info/files/l10n_packager/%core/%project/%project-%release.%language.po
 l10n server = localize.humanitarianresponse.info
 l10n url = http://localize.humanitarianresponse.info/sites/localize.humanitarianresponse.info/files/l10n_packager/l10n_server.xml
