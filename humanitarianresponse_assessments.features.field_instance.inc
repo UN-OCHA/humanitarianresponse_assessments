@@ -2175,86 +2175,6 @@ function humanitarianresponse_assessments_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-population_types-description_field'
-  $field_instances['taxonomy_term-population_types-description_field'] = array(
-    'bundle' => 'population_types',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'A field replacing taxonomy term description.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 1,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'description_field',
-    'label' => 'Description',
-    'required' => FALSE,
-    'settings' => array(
-      'display_summary' => 0,
-      'entity_translation_sync' => FALSE,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => -5,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-population_types-name_field'
-  $field_instances['taxonomy_term-population_types-name_field'] = array(
-    'bundle' => 'population_types',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'A field replacing taxonomy term name.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'name_field',
-    'label' => 'Name',
-    'required' => TRUE,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => -5,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('A field replacing taxonomy term description.');
@@ -2280,7 +2200,6 @@ function humanitarianresponse_assessments_field_default_field_instances() {
   t('Contact Telephone/Mobile');
   t('Data Accessibilty');
   t('Data Instructions');
-  t('Description');
   t('Frequency');
   t('Key findings');
   t('Leading/Coordinating Organizations');
@@ -2288,7 +2207,6 @@ function humanitarianresponse_assessments_field_default_field_instances() {
   t('Linked Resources');
   t('Location');
   t('Methodology');
-  t('Name');
   t('Other location');
   t('Participating Organization(s)');
   t('Questionnaire Accessibility');
