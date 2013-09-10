@@ -981,8 +981,10 @@ function humanitarianresponse_assessments_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
       'weight' => 18,
     ),
   );
@@ -1645,7 +1647,7 @@ function humanitarianresponse_assessments_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_asst_sample_size',
     'label' => 'Sample Size',
-    'required' => 0,
+    'required' => FALSE,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'text_processing' => 0,
@@ -1881,8 +1883,10 @@ function humanitarianresponse_assessments_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
       'weight' => 16,
     ),
   );
@@ -1925,8 +1929,10 @@ function humanitarianresponse_assessments_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
       'weight' => 0,
     ),
   );
@@ -2119,8 +2125,10 @@ function humanitarianresponse_assessments_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
       'weight' => 24,
     ),
   );
@@ -2177,8 +2185,6 @@ function humanitarianresponse_assessments_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('A field replacing taxonomy term description.');
-  t('A field replacing taxonomy term name.');
   t('Assessment Data');
   t('Assessment Data File');
   t('Assessment Data File(Restricted)');
