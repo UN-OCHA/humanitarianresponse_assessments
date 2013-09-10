@@ -973,7 +973,7 @@ function humanitarianresponse_assessments_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_asst_collection_method',
     'label' => 'Collection Method',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
@@ -1017,7 +1017,7 @@ function humanitarianresponse_assessments_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_asst_contact_email',
     'label' => 'Contact Email',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
@@ -1645,7 +1645,7 @@ function humanitarianresponse_assessments_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_asst_sample_size',
     'label' => 'Sample Size',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'text_processing' => 0,
