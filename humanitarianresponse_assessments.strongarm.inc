@@ -84,7 +84,7 @@ function humanitarianresponse_assessments_strongarm() {
         'custom_settings' => FALSE,
       ),
       'search' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'revision' => array(
         'custom_settings' => FALSE,
