@@ -428,7 +428,7 @@ function humanitarianresponse_assessments_views_default_views() {
     'other_bottom' => 'field_location_lat',
     'other_left' => 'field_location_lat',
     'name_field' => 'title_field',
-    'description_field' => '',
+    'description_field' => 'field_asst_status',
     'style_field' => '',
   );
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -468,6 +468,30 @@ function humanitarianresponse_assessments_views_default_views() {
     'title_link' => 'content',
     'title_class' => '',
   );
+  /* Field: Indexed Node: Assessment Start Date */
+  $handler->display->display_options['fields']['field_asst_start_date']['id'] = 'field_asst_start_date';
+  $handler->display->display_options['fields']['field_asst_start_date']['table'] = 'search_api_index_assessments';
+  $handler->display->display_options['fields']['field_asst_start_date']['field'] = 'field_asst_start_date';
+  $handler->display->display_options['fields']['field_asst_start_date']['label'] = 'Date';
+  $handler->display->display_options['fields']['field_asst_start_date']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
+  );
+  /* Field: Indexed Node: Assessment Status */
+  $handler->display->display_options['fields']['field_asst_status']['id'] = 'field_asst_status';
+  $handler->display->display_options['fields']['field_asst_status']['table'] = 'search_api_index_assessments';
+  $handler->display->display_options['fields']['field_asst_status']['field'] = 'field_asst_status';
+  $handler->display->display_options['fields']['field_asst_status']['label'] = '';
+  $handler->display->display_options['fields']['field_asst_status']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_asst_status']['alter']['text'] = '&nbsp;Date:[field_asst_start_date]
+&nbsp;Status: [field_asst_status]';
+  $handler->display->display_options['fields']['field_asst_status']['alter']['nl2br'] = TRUE;
+  $handler->display->display_options['fields']['field_asst_status']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_asst_status']['element_label_colon'] = FALSE;
 
   /* Display: Map */
   $handler = $view->new_display('page', 'Map', 'map');
@@ -554,6 +578,9 @@ function humanitarianresponse_assessments_views_default_views() {
     t('Contact Telephone'),
     t('Map Data'),
     t('Location » Latitude'),
+    t('Date'),
+    t('&nbsp;Date:[field_asst_start_date]
+&nbsp;Status: [field_asst_status]'),
     t('Map'),
   );
   $export['assessment_registry'] = $view;
