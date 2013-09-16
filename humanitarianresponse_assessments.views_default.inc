@@ -410,6 +410,83 @@ function humanitarianresponse_assessments_views_default_views() {
     'table' => 'table',
     'default' => 0,
   );
+
+  /* Display: Map Data */
+  $handler = $view->new_display('openlayers', 'Map Data', 'map_data');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'openlayers_data';
+  $handler->display->display_options['style_options']['data_source'] = array(
+    'value' => 'other_latlon',
+    'other_lat' => 'field_location_lat',
+    'other_lon' => 'field_location_lon',
+    'wkt' => 'field_location_lat',
+    'other_top' => 'field_location_lat',
+    'other_right' => 'field_location_lat',
+    'other_bottom' => 'field_location_lat',
+    'other_left' => 'field_location_lat',
+    'name_field' => 'title_field',
+    'description_field' => '',
+    'style_field' => '',
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Indexed Node: Location */
+  $handler->display->display_options['relationships']['field_locations']['id'] = 'field_locations';
+  $handler->display->display_options['relationships']['field_locations']['table'] = 'search_api_index_assessments';
+  $handler->display->display_options['relationships']['field_locations']['field'] = 'field_locations';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Location » Latitude */
+  $handler->display->display_options['fields']['field_location_lat']['id'] = 'field_location_lat';
+  $handler->display->display_options['fields']['field_location_lat']['table'] = 'entity_taxonomy_term';
+  $handler->display->display_options['fields']['field_location_lat']['field'] = 'field_location_lat';
+  $handler->display->display_options['fields']['field_location_lat']['relationship'] = 'field_locations';
+  /* Field: Taxonomy term: Location » Longitude */
+  $handler->display->display_options['fields']['field_location_lon']['id'] = 'field_location_lon';
+  $handler->display->display_options['fields']['field_location_lon']['table'] = 'entity_taxonomy_term';
+  $handler->display->display_options['fields']['field_location_lon']['field'] = 'field_location_lon';
+  $handler->display->display_options['fields']['field_location_lon']['relationship'] = 'field_locations';
+  $handler->display->display_options['fields']['field_location_lon']['label'] = '';
+  $handler->display->display_options['fields']['field_location_lon']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_location_lon']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_location_lon']['precision'] = '0';
+  $handler->display->display_options['fields']['field_location_lon']['link_to_entity'] = 0;
+  /* Field: Indexed Node: Title */
+  $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
+  $handler->display->display_options['fields']['title_field']['table'] = 'search_api_index_assessments';
+  $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
+  $handler->display->display_options['fields']['title_field']['label'] = '';
+  $handler->display->display_options['fields']['title_field']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title_field']['type'] = 'title_linked';
+  $handler->display->display_options['fields']['title_field']['settings'] = array(
+    'title_style' => '_none',
+    'title_link' => 'content',
+    'title_class' => '',
+  );
+
+  /* Display: Map */
+  $handler = $view->new_display('page', 'Map', 'map');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'openlayers_map';
+  $handler->display->display_options['style_options']['map'] = 'assessments';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['exposed_block'] = TRUE;
+  $handler->display->display_options['path'] = 'assessment-registry/map';
+  $handler->display->display_options['menu']['type'] = 'tab';
+  $handler->display->display_options['menu']['title'] = 'Map';
+  $handler->display->display_options['menu']['weight'] = '6';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
   $translatables['assessment_registry'] = array(
     t('Master'),
     t('Assessment Registry'),
@@ -475,6 +552,9 @@ function humanitarianresponse_assessments_views_default_views() {
     t('Contact Email'),
     t('Contact Name'),
     t('Contact Telephone'),
+    t('Map Data'),
+    t('Location » Latitude'),
+    t('Map'),
   );
   $export['assessment_registry'] = $view;
 

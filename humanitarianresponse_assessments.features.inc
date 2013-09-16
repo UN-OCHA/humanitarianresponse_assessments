@@ -17,6 +17,9 @@ function humanitarianresponse_assessments_ctools_plugin_api($module = NULL, $api
   if ($module == "facetapi" && $api == "facetapi_defaults") {
     return array("version" => "1");
   }
+  if ($module == "openlayers" && $api == "openlayers_maps") {
+    return array("version" => "1");
+  }
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -105,7 +108,10 @@ function humanitarianresponse_assessments_default_search_api_index() {
         "search_api_access_node" : { "type" : "list\\u003Cstring\\u003E" },
         "field_asst_start_date:value" : { "type" : "date" },
         "field_asst_start_date:value2" : { "type" : "date" },
-        "field_asst_start_date:duration" : { "type" : "duration" }
+        "field_asst_start_date:duration" : { "type" : "duration" },
+        "field_locations:field_location:wkt" : { "type" : "list\\u003Cstring\\u003E" },
+        "field_locations:field_location:lat" : { "type" : "list\\u003Cdecimal\\u003E" },
+        "field_locations:field_location:lon" : { "type" : "list\\u003Cdecimal\\u003E" }
       },
       "data_alter_callbacks" : {
         "search_api_alter_bundle_filter" : {
@@ -116,7 +122,7 @@ function humanitarianresponse_assessments_default_search_api_index() {
         "search_api_alter_node_access" : { "status" : 1, "weight" : "0", "settings" : [] },
         "search_api_alter_node_status" : { "status" : 0, "weight" : "0", "settings" : [] },
         "search_api_alter_add_hierarchy" : {
-          "status" : 1,
+          "status" : 0,
           "weight" : "0",
           "settings" : { "fields" : { "field_locations:parent" : "field_locations:parent" } }
         },

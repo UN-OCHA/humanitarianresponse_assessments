@@ -62,6 +62,13 @@ function humanitarianresponse_assessments_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'facetapi_pretty_paths_searcher_search_api@assessments';
+  $strongarm->value = 1;
+  $export['facetapi_pretty_paths_searcher_search_api@assessments'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__assessment';
   $strongarm->value = array(
     'view_modes' => array(
