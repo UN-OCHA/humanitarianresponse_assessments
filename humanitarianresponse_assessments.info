@@ -127,6 +127,7 @@ features[field_instance][] = node-assessment-field_locations
 features[field_instance][] = node-assessment-field_organizations
 features[field_instance][] = node-assessment-field_population_type
 features[field_instance][] = node-assessment-title_field
+features[menu_links][] = main-menu:assessment-registry
 features[node][] = assessment
 features[openlayers_maps][] = assessments
 features[search_api_autocomplete_search][] = search_api_views_assessment_registry

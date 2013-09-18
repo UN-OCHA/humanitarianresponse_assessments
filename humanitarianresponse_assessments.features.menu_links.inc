@@ -27,7 +27,7 @@ function humanitarianresponse_assessments_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => 15,
     'parent_path' => '<nolink>',
   );
   // Translatables
