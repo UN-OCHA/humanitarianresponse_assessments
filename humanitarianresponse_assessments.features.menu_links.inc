@@ -18,9 +18,8 @@ function humanitarianresponse_assessments_menu_default_menu_links() {
     'link_title' => 'Assessments Registry',
     'options' => array(
       'attributes' => array(
-        'title' => 'Assessments Registry',
+        'title' => '',
       ),
-      'alter' => TRUE,
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -28,7 +27,6 @@ function humanitarianresponse_assessments_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => 15,
-    'parent_path' => '<nolink>',
   );
   // Translatables
   // Included for use with string extractors like potx.

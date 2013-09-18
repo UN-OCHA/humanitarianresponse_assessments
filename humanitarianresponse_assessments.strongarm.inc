@@ -136,8 +136,9 @@ function humanitarianresponse_assessments_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_assessment';
   $strongarm->value = array(
-    0 => 'status',
-    1 => 'promote',
+    0 => 'promote',
+    1 => 'moderation',
+    2 => 'revision',
   );
   $export['node_options_assessment'] = $strongarm;
 
@@ -154,6 +155,13 @@ function humanitarianresponse_assessments_strongarm() {
   $strongarm->name = 'node_submitted_assessment';
   $strongarm->value = 0;
   $export['node_submitted_assessment'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_moderation_default_state_assessment';
+  $strongarm->value = 'needs_review';
+  $export['workbench_moderation_default_state_assessment'] = $strongarm;
 
   return $export;
 }
