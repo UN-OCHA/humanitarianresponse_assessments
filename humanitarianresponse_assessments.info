@@ -5,6 +5,7 @@ package = Humanitarianresponse
 dependencies[] = chosen
 dependencies[] = conditional_fields
 dependencies[] = date
+dependencies[] = date_popup
 dependencies[] = entity
 dependencies[] = facetapi
 dependencies[] = field_collection
