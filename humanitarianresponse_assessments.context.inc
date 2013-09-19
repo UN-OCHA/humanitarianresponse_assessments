@@ -113,9 +113,15 @@ function humanitarianresponse_assessments_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views--exp-assessment_registry2-page' => array(
+        'search_api_saved_searches-assessments' => array(
+          'module' => 'search_api_saved_searches',
+          'delta' => 'assessments',
+          'region' => 'sidebar_first',
+          'weight' => '-12',
+        ),
+        'views--exp-assessment_registry-page' => array(
           'module' => 'views',
-          'delta' => '-exp-assessment_registry2-page',
+          'delta' => '-exp-assessment_registry-page',
           'region' => 'sidebar_first',
           'weight' => '-10',
         ),
@@ -152,9 +158,9 @@ function humanitarianresponse_assessments_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views--exp-assessment_registry2-table' => array(
+        'views--exp-assessment_registry-table' => array(
           'module' => 'views',
-          'delta' => '-exp-assessment_registry2-table',
+          'delta' => '-exp-assessment_registry-table',
           'region' => 'sidebar_first',
           'weight' => '-10',
         ),
