@@ -26,6 +26,12 @@ function humanitarianresponse_assessments_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'current_search-hr_assessments' => array(
+          'module' => 'current_search',
+          'delta' => 'hr_assessments',
+          'region' => 'sidebar_first',
+          'weight' => '-11',
+        ),
         'facetapi-vmG6AJo392ZMavpGBkd1icOjK38XLc1o' => array(
           'module' => 'facetapi',
           'delta' => 'vmG6AJo392ZMavpGBkd1icOjK38XLc1o',

@@ -11,6 +11,9 @@ function humanitarianresponse_assessments_ctools_plugin_api($module = NULL, $api
   if ($module == "context" && $api == "context") {
     return array("version" => "3");
   }
+  if ($module == "current_search" && $api == "current_search") {
+    return array("version" => "1");
+  }
   if ($module == "ds" && $api == "ds") {
     return array("version" => "1");
   }
