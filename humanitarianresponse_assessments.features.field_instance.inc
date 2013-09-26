@@ -2243,6 +2243,52 @@ function humanitarianresponse_assessments_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-assessment-field_local_themes'
+  $field_instances['node-assessment-field_local_themes'] = array(
+    'bundle' => 'assessment',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 29,
+      ),
+      'search' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_local_themes',
+    'label' => 'Local Themes',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 46,
+    ),
+  );
+
   // Exported field_instance: 'node-assessment-field_locations'
   $field_instances['node-assessment-field_locations'] = array(
     'bundle' => 'assessment',
@@ -2401,6 +2447,52 @@ function humanitarianresponse_assessments_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-assessment-field_themes'
+  $field_instances['node-assessment-field_themes'] = array(
+    'bundle' => 'assessment',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 28,
+      ),
+      'search' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_themes',
+    'label' => 'Theme(s)',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 44,
+    ),
+  );
+
   // Exported field_instance: 'node-assessment-title_field'
   $field_instances['node-assessment-title_field'] = array(
     'bundle' => 'assessment',
@@ -2490,6 +2582,7 @@ function humanitarianresponse_assessments_field_default_field_instances() {
   t('Leading/Coordinating Organizations');
   t('Level of Representation');
   t('Linked Resources');
+  t('Local Themes');
   t('Location');
   t('Methodology');
   t('Other location');
@@ -2505,6 +2598,7 @@ function humanitarianresponse_assessments_field_default_field_instances() {
   t('Sample Size');
   t('Statistical significance of study of which level of administrative unit. If sample method is not representative with defined methdodology, choose non-representative.');
   t('Subject/Objective');
+  t('Theme(s)');
   t('Type of Population');
   t('Unit of Measurement');
 

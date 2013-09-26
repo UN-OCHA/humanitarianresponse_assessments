@@ -94,6 +94,8 @@ function humanitarianresponse_assessments_default_search_api_index() {
         "field_organizations" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_clusters" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_locations" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_themes" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_local_themes" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_population_type" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_asst_collection_method" : { "type" : "list\\u003Cstring\\u003E" },
         "field_asst_freq" : { "type" : "string" },
@@ -112,7 +114,6 @@ function humanitarianresponse_assessments_default_search_api_index() {
         "field_asst_start_date:value" : { "type" : "date" },
         "field_asst_start_date:value2" : { "type" : "date" },
         "field_asst_start_date:duration" : { "type" : "duration" },
-        "field_locations:field_location:wkt" : { "type" : "list\\u003Cstring\\u003E" },
         "field_locations:field_location:lat" : { "type" : "list\\u003Cdecimal\\u003E" },
         "field_locations:field_location:lon" : { "type" : "list\\u003Cdecimal\\u003E" }
       },
