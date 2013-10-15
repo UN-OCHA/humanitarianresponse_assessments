@@ -492,6 +492,32 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['field_asst_status']['alter']['nl2br'] = TRUE;
   $handler->display->display_options['fields']['field_asst_status']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_asst_status']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Search: Fulltext search */
+  $handler->display->display_options['filters']['search_api_views_fulltext']['id'] = 'search_api_views_fulltext';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['table'] = 'search_api_index_assessments';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['field'] = 'search_api_views_fulltext';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator_id'] = 'search_api_views_fulltext_op';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['label'] = 'Search for';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator'] = 'search_api_views_fulltext_op';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['identifier'] = 'search_api_views_fulltext';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    218860149 => 0,
+    188284353 => 0,
+    200153887 => 0,
+    197637936 => 0,
+    52310416 => 0,
+    30037204 => 0,
+  );
+  /* Filter criterion: Location » Location: Latitude (indexed) */
+  $handler->display->display_options['filters']['field_locations_field_location_lat']['id'] = 'field_locations_field_location_lat';
+  $handler->display->display_options['filters']['field_locations_field_location_lat']['table'] = 'search_api_index_assessments';
+  $handler->display->display_options['filters']['field_locations_field_location_lat']['field'] = 'field_locations_field_location_lat';
+  $handler->display->display_options['filters']['field_locations_field_location_lat']['operator'] = 'not empty';
 
   /* Display: Map */
   $handler = $view->new_display('page', 'Map', 'map');
