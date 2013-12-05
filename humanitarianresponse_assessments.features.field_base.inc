@@ -527,6 +527,7 @@ function humanitarianresponse_assessments_field_default_field_bases() {
         ),
       ),
       'entity_translation_sync' => FALSE,
+      'options_list_callback' => 'humanitarianresponse_i18n_allowed_values',
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
