@@ -20,9 +20,6 @@ function humanitarianresponse_assessments_ctools_plugin_api($module = NULL, $api
   if ($module == "facetapi" && $api == "facetapi_defaults") {
     return array("version" => "1");
   }
-  if ($module == "feeds" && $api == "feeds_importer_default") {
-    return array("version" => "1");
-  }
   if ($module == "openlayers" && $api == "openlayers_maps") {
     return array("version" => "1");
   }
