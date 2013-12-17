@@ -643,7 +643,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Sort criterion: Content: Assessment Start Date -  start date (field_asst_start_date) */
+  /* Sort criterion: Content: Assessment Start Date (field_asst_start_date) */
   $handler->display->display_options['sorts']['field_asst_start_date_value']['id'] = 'field_asst_start_date_value';
   $handler->display->display_options['sorts']['field_asst_start_date_value']['table'] = 'field_data_field_asst_start_date';
   $handler->display->display_options['sorts']['field_asst_start_date_value']['field'] = 'field_asst_start_date_value';

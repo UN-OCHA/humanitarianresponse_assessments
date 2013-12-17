@@ -137,8 +137,8 @@ function humanitarianresponse_assessments_strongarm() {
   $strongarm->name = 'node_options_assessment';
   $strongarm->value = array(
     0 => 'promote',
-    1 => 'moderation',
-    2 => 'revision',
+    1 => 'revision',
+    2 => 'moderation',
   );
   $export['node_options_assessment'] = $strongarm;
 
