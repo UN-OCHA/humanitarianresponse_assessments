@@ -1593,6 +1593,7 @@ function humanitarianresponse_assessments_field_default_field_instances() {
         'allowed_formats' => array(
           'filtered_html' => 'filtered_html',
           'full_html' => 'full_html',
+          'php_code' => 0,
           'plain_text' => 'plain_text',
           'simple' => 'simple',
         ),
@@ -1605,6 +1606,9 @@ function humanitarianresponse_assessments_field_default_field_instances() {
             ),
             'full_html' => array(
               'weight' => 0,
+            ),
+            'php_code' => array(
+              'weight' => 11,
             ),
             'plain_text' => array(
               'weight' => 10,
@@ -2538,9 +2542,39 @@ function humanitarianresponse_assessments_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'title_field',
-    'label' => 'Assessment Title',
+    'label' => 'Title',
     'required' => 1,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'php_code' => 'php_code',
+          'plain_text' => 'plain_text',
+          'simple' => 'simple',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 0,
+            ),
+            'php_code' => array(
+              'weight' => 11,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+            'simple' => array(
+              'weight' => 0,
+            ),
+          ),
+        ),
+      ),
       'entity_translation_sync' => FALSE,
       'hide_label' => array(
         'entity' => 0,
@@ -2575,7 +2609,6 @@ function humanitarianresponse_assessments_field_default_field_instances() {
   t('Assessment Report URL(Restricted)');
   t('Assessment Start Date');
   t('Assessment Status');
-  t('Assessment Title');
   t('Clusters');
   t('Collection Method');
   t('Contact Email');
@@ -2605,6 +2638,7 @@ function humanitarianresponse_assessments_field_default_field_instances() {
   t('Statistical significance of study of which level of administrative unit. If sample method is not representative with defined methdodology, choose non-representative.');
   t('Subject/Objective');
   t('Theme(s)');
+  t('Title');
   t('Type of Population');
   t('Unit of Measurement');
 

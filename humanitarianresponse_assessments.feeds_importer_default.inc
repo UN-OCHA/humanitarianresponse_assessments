@@ -70,14 +70,14 @@ function humanitarianresponse_assessments_feeds_importer_default() {
             'unique' => FALSE,
           ),
           5 => array(
-            'source' => 'Assessment Title',
-            'target' => 'title_field:et:en',
-            'unique' => FALSE,
-          ),
-          6 => array(
             'source' => 'Subject/Objective',
             'target' => 'field_asst_subject',
             'unique' => FALSE,
+          ),
+          6 => array(
+            'source' => 'Title',
+            'target' => 'title',
+            'unique' => 1,
           ),
           7 => array(
             'source' => 'Methodology',
@@ -215,13 +215,13 @@ function humanitarianresponse_assessments_feeds_importer_default() {
             'unique' => FALSE,
           ),
           34 => array(
-            'source' => 'Title',
-            'target' => 'title',
-            'unique' => 1,
-          ),
-          35 => array(
             'source' => 'URL',
             'target' => 'url',
+            'unique' => FALSE,
+          ),
+          35 => array(
+            'source' => 'Title',
+            'target' => 'title_field:et:en',
             'unique' => FALSE,
           ),
         ),
