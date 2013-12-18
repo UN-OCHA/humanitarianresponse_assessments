@@ -19,7 +19,7 @@ function humanitarianresponse_assessments_facetapi_default_facet_settings() {
   $facet->facet = 'field_asst_collection_method';
   $facet->enabled = FALSE;
   $facet->settings = array(
-    'operator' => 'and',
+    'operator' => 'or',
     'hard_limit' => '50',
     'dependencies' => array(
       'bundle' => 'none',
@@ -44,7 +44,7 @@ function humanitarianresponse_assessments_facetapi_default_facet_settings() {
   $facet->facet = 'field_asst_freq';
   $facet->enabled = FALSE;
   $facet->settings = array(
-    'operator' => 'and',
+    'operator' => 'or',
     'hard_limit' => '50',
     'dependencies' => array(
       'bundle' => 'none',
@@ -69,7 +69,7 @@ function humanitarianresponse_assessments_facetapi_default_facet_settings() {
   $facet->facet = 'field_asst_level_representation';
   $facet->enabled = FALSE;
   $facet->settings = array(
-    'operator' => 'and',
+    'operator' => 'or',
     'hard_limit' => '50',
     'dependencies' => array(
       'bundle' => 'none',
@@ -96,7 +96,7 @@ function humanitarianresponse_assessments_facetapi_default_facet_settings() {
   $facet->facet = 'field_asst_participating_org';
   $facet->enabled = FALSE;
   $facet->settings = array(
-    'operator' => 'and',
+    'operator' => 'or',
     'hard_limit' => '50',
     'dependencies' => array(
       'bundle' => 'none',
@@ -123,7 +123,7 @@ function humanitarianresponse_assessments_facetapi_default_facet_settings() {
   $facet->facet = 'field_asst_status';
   $facet->enabled = FALSE;
   $facet->settings = array(
-    'operator' => 'and',
+    'operator' => 'or',
     'hard_limit' => '50',
     'dependencies' => array(
       'bundle' => 'none',
@@ -148,7 +148,7 @@ function humanitarianresponse_assessments_facetapi_default_facet_settings() {
   $facet->facet = 'field_clusters';
   $facet->enabled = FALSE;
   $facet->settings = array(
-    'operator' => 'and',
+    'operator' => 'or',
     'hard_limit' => '50',
     'dependencies' => array(
       'bundle' => 'none',
@@ -175,7 +175,7 @@ function humanitarianresponse_assessments_facetapi_default_facet_settings() {
   $facet->facet = 'field_local_themes';
   $facet->enabled = FALSE;
   $facet->settings = array(
-    'operator' => 'and',
+    'operator' => 'or',
     'hard_limit' => '50',
     'dependencies' => array(
       'bundle' => 'none',
@@ -202,7 +202,7 @@ function humanitarianresponse_assessments_facetapi_default_facet_settings() {
   $facet->facet = 'field_locations';
   $facet->enabled = FALSE;
   $facet->settings = array(
-    'operator' => 'and',
+    'operator' => 'or',
     'hard_limit' => '50',
     'dependencies' => array(
       'bundle' => 'none',
@@ -229,7 +229,7 @@ function humanitarianresponse_assessments_facetapi_default_facet_settings() {
   $facet->facet = 'field_organizations';
   $facet->enabled = FALSE;
   $facet->settings = array(
-    'operator' => 'and',
+    'operator' => 'or',
     'hard_limit' => '50',
     'dependencies' => array(
       'bundle' => 'none',
@@ -257,7 +257,7 @@ function humanitarianresponse_assessments_facetapi_default_facet_settings() {
   $facet->facet = 'field_population_type';
   $facet->enabled = FALSE;
   $facet->settings = array(
-    'operator' => 'and',
+    'operator' => 'or',
     'hard_limit' => '50',
     'dependencies' => array(
       'bundle' => 'none',
@@ -284,7 +284,7 @@ function humanitarianresponse_assessments_facetapi_default_facet_settings() {
   $facet->facet = 'field_themes';
   $facet->enabled = FALSE;
   $facet->settings = array(
-    'operator' => 'and',
+    'operator' => 'or',
     'hard_limit' => '50',
     'dependencies' => array(
       'bundle' => 'none',
