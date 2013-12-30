@@ -224,6 +224,16 @@ function humanitarianresponse_assessments_feeds_importer_default() {
             'target' => 'title_field:et:en',
             'unique' => FALSE,
           ),
+          36 => array(
+            'source' => 'Emergencies',
+            'target' => 'field_emergencies',
+            'unique' => FALSE,
+          ),
+          37 => array(
+            'source' => 'Title',
+            'target' => 'title_field:et:und',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '2',
         'input_format' => 'plain_text',

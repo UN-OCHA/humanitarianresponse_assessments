@@ -45,6 +45,22 @@ function humanitarianresponse_assessments_feeds_tamper_default() {
   $feeds_tamper = new stdClass();
   $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */
   $feeds_tamper->api_version = 2;
+  $feeds_tamper->id = 'csv_humanitarian_response_assessments-emergencies-explode';
+  $feeds_tamper->importer = 'csv_humanitarian_response_assessments';
+  $feeds_tamper->source = 'Emergencies';
+  $feeds_tamper->plugin_id = 'explode';
+  $feeds_tamper->settings = array(
+    'separator' => ';',
+    'limit' => '',
+    'real_separator' => ';',
+  );
+  $feeds_tamper->weight = 0;
+  $feeds_tamper->description = 'Explode';
+  $export['csv_humanitarian_response_assessments-emergencies-explode'] = $feeds_tamper;
+
+  $feeds_tamper = new stdClass();
+  $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */
+  $feeds_tamper->api_version = 2;
   $feeds_tamper->id = 'csv_humanitarian_response_assessments-leading_coordination_organizations-explode';
   $feeds_tamper->importer = 'csv_humanitarian_response_assessments';
   $feeds_tamper->source = 'Leading/Coordination Organizations';

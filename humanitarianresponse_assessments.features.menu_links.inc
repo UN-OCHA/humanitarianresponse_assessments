@@ -10,17 +10,16 @@
 function humanitarianresponse_assessments_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu_assessments-registry:assessment-registry
-  $menu_links['main-menu_assessments-registry:assessment-registry'] = array(
+  // Exported menu link: main-menu:assessment-registry
+  $menu_links['main-menu:assessment-registry'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'assessment-registry',
     'router_path' => 'assessment-registry',
     'link_title' => 'Assessments Registry',
     'options' => array(
       'attributes' => array(
-        'title' => '',
+        'title' => 'Assessments Registry',
       ),
-      'identifier' => 'main-menu_assessments-registry:assessment-registry',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -28,7 +27,6 @@ function humanitarianresponse_assessments_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => 15,
-    'customized' => 0,
   );
   // Translatables
   // Included for use with string extractors like potx.

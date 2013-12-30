@@ -169,6 +169,33 @@ function humanitarianresponse_assessments_facetapi_default_facet_settings() {
   $facet = new stdClass();
   $facet->disabled = FALSE; /* Edit this to true to make a default facet disabled initially */
   $facet->api_version = 1;
+  $facet->name = 'search_api@assessments::field_emergencies';
+  $facet->searcher = 'search_api@assessments';
+  $facet->realm = '';
+  $facet->facet = 'field_emergencies';
+  $facet->enabled = FALSE;
+  $facet->settings = array(
+    'operator' => 'and',
+    'hard_limit' => '50',
+    'dependencies' => array(
+      'bundle' => 'none',
+      'bundle_selected' => array(),
+    ),
+    'facet_mincount' => '1',
+    'facet_missing' => '0',
+    'flatten' => '0',
+    'query_type' => 'term',
+    'default_true' => TRUE,
+    'facet_search_ids' => array(),
+    'pretty_paths_alias' => 'field_emergencies',
+    'pretty_paths_taxonomy_pathauto' => 1,
+    'pretty_paths_taxonomy_pathauto_vocabulary' => 'emergencies',
+  );
+  $export['search_api@assessments::field_emergencies'] = $facet;
+
+  $facet = new stdClass();
+  $facet->disabled = FALSE; /* Edit this to true to make a default facet disabled initially */
+  $facet->api_version = 1;
   $facet->name = 'search_api@assessments::field_local_themes';
   $facet->searcher = 'search_api@assessments';
   $facet->realm = '';

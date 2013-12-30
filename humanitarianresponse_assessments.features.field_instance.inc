@@ -2181,6 +2181,52 @@ function humanitarianresponse_assessments_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-assessment-field_emergencies'
+  $field_instances['node-assessment-field_emergencies'] = array(
+    'bundle' => 'assessment',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 30,
+      ),
+      'search' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_emergencies',
+    'label' => 'Emergencies',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 54,
+    ),
+  );
+
   // Exported field_instance: 'node-assessment-field_linked_resources'
   $field_instances['node-assessment-field_linked_resources'] = array(
     'bundle' => 'assessment',
@@ -2616,6 +2662,7 @@ function humanitarianresponse_assessments_field_default_field_instances() {
   t('Contact Telephone/Mobile');
   t('Data Accessibilty');
   t('Data Instructions');
+  t('Emergencies');
   t('Frequency');
   t('Key findings');
   t('Leading/Coordinating Organizations');
