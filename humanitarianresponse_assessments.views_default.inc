@@ -306,7 +306,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['field_asst_subject']['id'] = 'field_asst_subject';
   $handler->display->display_options['fields']['field_asst_subject']['table'] = 'search_api_index_assessments';
   $handler->display->display_options['fields']['field_asst_subject']['field'] = 'field_asst_subject';
-  /* Field: Indexed Node: Type of Population */
+  /* Field: Indexed Node: Primary Beneficiary */
   $handler->display->display_options['fields']['field_population_type']['id'] = 'field_population_type';
   $handler->display->display_options['fields']['field_population_type']['table'] = 'search_api_index_assessments';
   $handler->display->display_options['fields']['field_population_type']['field'] = 'field_population_type';
@@ -420,13 +420,13 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'openlayers_data';
   $handler->display->display_options['style_options']['data_source'] = array(
     'value' => 'other_latlon',
-    'other_lat' => 'field_location_lat',
-    'other_lon' => 'field_location_lon',
-    'wkt' => 'field_location_lat',
-    'other_top' => 'field_location_lat',
-    'other_right' => 'field_location_lat',
-    'other_bottom' => 'field_location_lat',
-    'other_left' => 'field_location_lat',
+    'other_lat' => 'field_locations_field_location_lat',
+    'other_lon' => 'field_locations_field_location_lon',
+    'wkt' => 'title_field',
+    'other_top' => 'title_field',
+    'other_right' => 'title_field',
+    'other_bottom' => 'title_field',
+    'other_left' => 'title_field',
     'name_field' => 'title_field',
     'description_field' => 'field_asst_status',
     'style_field' => '',
@@ -441,21 +441,6 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['relationships']['field_locations']['table'] = 'search_api_index_assessments';
   $handler->display->display_options['relationships']['field_locations']['field'] = 'field_locations';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Taxonomy term: Location » Latitude */
-  $handler->display->display_options['fields']['field_location_lat']['id'] = 'field_location_lat';
-  $handler->display->display_options['fields']['field_location_lat']['table'] = 'entity_taxonomy_term';
-  $handler->display->display_options['fields']['field_location_lat']['field'] = 'field_location_lat';
-  $handler->display->display_options['fields']['field_location_lat']['relationship'] = 'field_locations';
-  /* Field: Taxonomy term: Location » Longitude */
-  $handler->display->display_options['fields']['field_location_lon']['id'] = 'field_location_lon';
-  $handler->display->display_options['fields']['field_location_lon']['table'] = 'entity_taxonomy_term';
-  $handler->display->display_options['fields']['field_location_lon']['field'] = 'field_location_lon';
-  $handler->display->display_options['fields']['field_location_lon']['relationship'] = 'field_locations';
-  $handler->display->display_options['fields']['field_location_lon']['label'] = '';
-  $handler->display->display_options['fields']['field_location_lon']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_location_lon']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_location_lon']['precision'] = '0';
-  $handler->display->display_options['fields']['field_location_lon']['link_to_entity'] = 0;
   /* Field: Indexed Node: Title */
   $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
   $handler->display->display_options['fields']['title_field']['table'] = 'search_api_index_assessments';
@@ -492,6 +477,28 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['field_asst_status']['alter']['nl2br'] = TRUE;
   $handler->display->display_options['fields']['field_asst_status']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_asst_status']['element_label_colon'] = FALSE;
+  /* Field: Location » Location: Latitude (indexed) */
+  $handler->display->display_options['fields']['field_locations_field_location_lat']['id'] = 'field_locations_field_location_lat';
+  $handler->display->display_options['fields']['field_locations_field_location_lat']['table'] = 'search_api_index_assessments';
+  $handler->display->display_options['fields']['field_locations_field_location_lat']['field'] = 'field_locations_field_location_lat';
+  $handler->display->display_options['fields']['field_locations_field_location_lat']['label'] = '';
+  $handler->display->display_options['fields']['field_locations_field_location_lat']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_locations_field_location_lat']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_locations_field_location_lat']['empty_zero'] = TRUE;
+  $handler->display->display_options['fields']['field_locations_field_location_lat']['precision'] = '0';
+  $handler->display->display_options['fields']['field_locations_field_location_lat']['separator'] = '';
+  $handler->display->display_options['fields']['field_locations_field_location_lat']['link_to_entity'] = 0;
+  /* Field: Location » Location: Longitude (indexed) */
+  $handler->display->display_options['fields']['field_locations_field_location_lon']['id'] = 'field_locations_field_location_lon';
+  $handler->display->display_options['fields']['field_locations_field_location_lon']['table'] = 'search_api_index_assessments';
+  $handler->display->display_options['fields']['field_locations_field_location_lon']['field'] = 'field_locations_field_location_lon';
+  $handler->display->display_options['fields']['field_locations_field_location_lon']['label'] = '';
+  $handler->display->display_options['fields']['field_locations_field_location_lon']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_locations_field_location_lon']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_locations_field_location_lon']['empty_zero'] = TRUE;
+  $handler->display->display_options['fields']['field_locations_field_location_lon']['precision'] = '0';
+  $handler->display->display_options['fields']['field_locations_field_location_lon']['separator'] = '';
+  $handler->display->display_options['fields']['field_locations_field_location_lon']['link_to_entity'] = 0;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Search: Fulltext search */
@@ -518,6 +525,18 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['filters']['field_locations_field_location_lat']['table'] = 'search_api_index_assessments';
   $handler->display->display_options['filters']['field_locations_field_location_lat']['field'] = 'field_locations_field_location_lat';
   $handler->display->display_options['filters']['field_locations_field_location_lat']['operator'] = 'not empty';
+  /* Filter criterion: Location » Location: Latitude (indexed) */
+  $handler->display->display_options['filters']['field_locations_field_location_lat_1']['id'] = 'field_locations_field_location_lat_1';
+  $handler->display->display_options['filters']['field_locations_field_location_lat_1']['table'] = 'search_api_index_assessments';
+  $handler->display->display_options['filters']['field_locations_field_location_lat_1']['field'] = 'field_locations_field_location_lat';
+  $handler->display->display_options['filters']['field_locations_field_location_lat_1']['operator'] = '<>';
+  $handler->display->display_options['filters']['field_locations_field_location_lat_1']['value'] = '0';
+  /* Filter criterion: Location » Location: Longitude (indexed) */
+  $handler->display->display_options['filters']['field_locations_field_location_lon']['id'] = 'field_locations_field_location_lon';
+  $handler->display->display_options['filters']['field_locations_field_location_lon']['table'] = 'search_api_index_assessments';
+  $handler->display->display_options['filters']['field_locations_field_location_lon']['field'] = 'field_locations_field_location_lon';
+  $handler->display->display_options['filters']['field_locations_field_location_lon']['operator'] = '<>';
+  $handler->display->display_options['filters']['field_locations_field_location_lon']['value'] = '0';
 
   /* Display: Map */
   $handler = $view->new_display('page', 'Map', 'map');
@@ -585,7 +604,7 @@ function humanitarianresponse_assessments_views_default_views() {
     t('Sample Size'),
     t('Level of Representation'),
     t('Subject/Objective'),
-    t('Type of Population'),
+    t('Primary Beneficiary'),
     t('Unit of Measurement'),
     t('Report Accessibility'),
     t('Assessment Report File'),
@@ -603,7 +622,6 @@ function humanitarianresponse_assessments_views_default_views() {
     t('Contact Name'),
     t('Contact Telephone'),
     t('Map Data'),
-    t('Location » Latitude'),
     t('Date'),
     t('&nbsp;Date:[field_asst_start_date]
 &nbsp;Status: [field_asst_status]'),
@@ -643,7 +661,7 @@ function humanitarianresponse_assessments_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Sort criterion: Content: Assessment Start Date (field_asst_start_date) */
+  /* Sort criterion: Content: Assessment Start Date -  start date (field_asst_start_date) */
   $handler->display->display_options['sorts']['field_asst_start_date_value']['id'] = 'field_asst_start_date_value';
   $handler->display->display_options['sorts']['field_asst_start_date_value']['table'] = 'field_data_field_asst_start_date';
   $handler->display->display_options['sorts']['field_asst_start_date_value']['field'] = 'field_asst_start_date_value';

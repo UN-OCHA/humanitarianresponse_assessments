@@ -75,6 +75,19 @@ function humanitarianresponse_assessments_openlayers_maps() {
         'panMapIfOutOfView' => 0,
         'keepInMap' => 1,
       ),
+      'openlayers_behavior_zoomtolayer' => array(
+        'zoomtolayer' => array(
+          'assessment_registry_map_data' => 'assessment_registry_map_data',
+          'mapbox_world_bright' => 0,
+          'mapbox_world_dark' => 0,
+          'mapbox_world_light' => 0,
+          'mapbox_world_print' => 0,
+          'mapbox_world_black' => 0,
+        ),
+        'point_zoom_level' => '5',
+        'zoomtolayer_scale' => '1',
+      ),
+
     ),
     'default_layer' => 'mapbox_world_bright',
     'layers' => array(
